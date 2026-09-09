@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Dynamic Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body { margin: 0; }
+    #map { height: 90vh; }
+    #controls {
+      padding: 8px;
+      background: #f5f5f5;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div id="controls">
+  <button onclick="play()">▶ Play</button>
+  <button onclick="pause()">⏸ Pause</button>
+  <button onclick="reset()">🔄 Reset</button>
+
+  <label>
+    Speed:
+    <select onchange="changeSpeed(this.value)">
+      <option value="2000">0.5x</option>
+      <option value="1000" selected>1x</option>
+      <option value="500">2x</option>
+    </select>
+  </label>
+
+  <span>Time step: <b id="stepLabel">0</b></span>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+/* ---------------- CONFIG ---------------- */
+const API_BASE = "http://127.0.0.1:8000";
+const FETCH_TIMEOUT = 4000;
+
+/* ---------------- MAP SETUP ---------------- */
+const map = L.map('map').setView([28.61, 77.21], 13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+let t = 0;
+let layer = L.layerGroup().addTo(map);
+let timer = null;
+let interval = 1000;
+const MAX_T = 30;
+
+/* ---------------- UI HELPERS ---------------- */
+const stepLabel = document.getElementById("stepLabel");
+const playBtn = document.querySelector("button[onclick='play()']");
+const pauseBtn = document.querySelector("button[onclick='pause()']");
+
+function setPlayingUI(isPlaying) {
+  playBtn.disabled = isPlaying;
+  pauseBtn.disabled = !isPlaying;
+}
+
+/* ---------------- SAFE FETCH ---------------- */
+async function safeFetch(url, timeout = FETCH_TIMEOUT) {
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const res = await fetch(url, { signal: controller.signal });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    return await res.json();
+  } finally {
+    clearTimeout(id);
+  }
+}
+
+/* ---------------- CORE STEP ---------------- */
+async function step() {
+  if (t >= MAX_T) {
+    pause();
+    return;
+  }
+
+  try {
+    const frame = await safeFetch(`${API_BASE}/state?t=${t}`);
+
+    layer.clearLayers();
+
+    /* ---- BLUE POINTS ---- */
+    if (Array.isArray(frame.blue)) {
+      frame.blue.forEach(p => {
+        L.circleMarker([p.lat, p.lng], {
+          radius: 8,
+          color: "blue",
+          fillColor: "blue",
+          fillOpacity: 0.9
+        }).addTo(layer);
+      });
+    }
+
+    /* ---- YELLOW POINTS ---- */
+    if (Array.isArray(frame.yellow)) {
+      frame.yellow.forEach(p => {
+        L.circleMarker([p.lat, p.lng], {
+          radius: 7,
+          color: "yellow",
+          fillColor: "yellow",
+          fillOpacity: 0.9
+        }).addTo(layer);
+      });
+    }
+
+    stepLabel.innerText = t;
+    t++;
+
+  } catch (err) {
+    console.error("Frame load failed:", err.message || err);
+    pause();   // fail safely, don’t freeze UI
+  }
+}
+
+/* ---------------- CONTROLS ---------------- */
+function play() {
+  if (timer) return;
+  setPlayingUI(true);
+  timer = setInterval(step, interval);
+}
+
+function pause() {
+  clearInterval(timer);
+  timer = null;
+  setPlayingUI(false);
+}
+
+function reset() {
+  pause();
+  t = 0;
+  layer.clearLayers();
+  stepLabel.innerText = t;
+}
+
+function changeSpeed(ms) {
+  interval = Number(ms);
+  if (timer) {
+    pause();
+    play();
+  }
+}
+
+/* ---------------- INIT STATE ---------------- */
+setPlayingUI(false);
+</script>
+
+
+</body>
+</html>
