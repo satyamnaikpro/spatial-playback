@@ -1,19 +1,17 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-import json
+"""
+Spatial Playback Entrypoint
+Delegates to the scalable FastAPI modular architecture in Backend/app/main.py
+"""
+import sys
+from pathlib import Path
 
-app = FastAPI()
+# Ensure Backend package is in path
+backend_dir = Path(__file__).resolve().parent
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+from app.main import app
 
-with open("data.json") as f:
-    DATA = json.load(f)
-
-@app.get("/state")
-def get_state(t: int):
-    return DATA[t % len(DATA)]
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
