@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   Compass, 
   UploadCloud, 
@@ -14,7 +14,11 @@ import {
   PanelLeftClose, 
   PanelLeft, 
   Map, 
-  Search 
+  Search,
+  ChevronDown,
+  Check,
+  Car,
+  Navigation
 } from 'lucide-react';
 
 export default function Header({
@@ -34,6 +38,8 @@ export default function Header({
   isLiveBackend
 }) {
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleFullscreenChange = () => {
@@ -42,6 +48,37 @@ export default function Header({
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') setDropdownOpen(false);
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
+  const getScenarioIcon = (id = '') => {
+    const lower = id.toLowerCase();
+    if (lower.includes('drone') || lower.includes('recon') || lower.includes('aerial')) {
+      return <Navigation size={15} />;
+    }
+    if (lower.includes('fleet') || lower.includes('patrol')) {
+      return <Car size={15} />;
+    }
+    if (lower.includes('clearance') || lower.includes('incident')) {
+      return <ShieldCheck size={15} />;
+    }
+    return <Compass size={15} />;
+  };
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
@@ -112,39 +149,158 @@ export default function Header({
 
       {/* Center: Google Search / Scenario Selector & Live Status Chips */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-        {/* Google Style Search / Scenario Dropdown */}
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          background: 'var(--bg-input)',
-          border: '1px solid var(--border-medium)',
-          borderRadius: '24px',
-          padding: '4px 12px',
-          boxShadow: 'inset 0 1px 2px rgba(0,0,0,0.04)'
-        }}>
-          <Search size={14} color="var(--text-muted)" />
-          <select 
-            value={currentScenarioId} 
-            onChange={(e) => onSelectScenario(e.target.value)}
+        {/* Custom MacBook Liquid Glass Scenario Dropdown */}
+        <div ref={dropdownRef} style={{ position: 'relative' }}>
+          <button
+            type="button"
+            onClick={() => setDropdownOpen(o => !o)}
+            className="liquid-glass-btn"
             style={{
-              background: 'transparent',
+              padding: '6px 14px',
+              height: '38px',
+              borderRadius: '20px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              border: dropdownOpen ? '1px solid var(--accent-cyan)' : '1px solid var(--liquid-glass-subcard-border)',
+              background: dropdownOpen ? 'var(--liquid-glass-card-hover)' : 'var(--liquid-glass-pill-bg)',
               color: 'var(--text-main)',
-              border: 'none',
-              fontSize: '13px',
-              fontFamily: 'var(--font-sans)',
-              fontWeight: 500,
-              outline: 'none',
               cursor: 'pointer',
-              maxWidth: '260px'
+              boxShadow: dropdownOpen ? '0 0 12px rgba(26, 115, 232, 0.25)' : 'none'
             }}
+            title="Choose Mission Scenario"
           >
-            {scenarios.map(s => (
-              <option key={s.id} value={s.id}>
-                {s.name} ({s.total_frames} frames)
-              </option>
-            ))}
-          </select>
+            <Search size={14} color="var(--accent-cyan)" />
+            <span style={{
+              fontSize: '13px',
+              fontWeight: 600,
+              maxWidth: '240px',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis'
+            }}>
+              {scenarios.find(s => s.id === currentScenarioId)?.name || 'Select Scenario'}
+            </span>
+            <span className="telemetry-tag" style={{ fontSize: '10px', padding: '1px 6px', borderRadius: '10px' }}>
+              {scenarios.find(s => s.id === currentScenarioId)?.total_frames || 0}f
+            </span>
+            <ChevronDown 
+              size={14} 
+              color="var(--text-muted)" 
+              style={{
+                transform: dropdownOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)'
+              }}
+            />
+          </button>
+
+          {/* Floating Elevated Liquid Glass Dropdown Popover */}
+          {dropdownOpen && (
+            <div
+              className="liquid-glass-popover"
+              style={{
+                position: 'absolute',
+                top: 'calc(100% + 8px)',
+                left: 0,
+                width: '400px',
+                maxHeight: '430px',
+                overflowY: 'auto',
+                padding: '10px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '6px',
+                zIndex: 2000,
+                animation: 'fadeIn 0.16s ease-out'
+              }}
+            >
+              <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                padding: '6px 10px 8px 10px',
+                borderBottom: '1px solid var(--popover-item-border)'
+              }}>
+                <span style={{
+                  fontSize: '11px',
+                  fontWeight: 800,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.6px',
+                  color: 'var(--text-muted)'
+                }}>
+                  MISSION SCENARIOS ({scenarios.length})
+                </span>
+                <span style={{ fontSize: '10px', color: 'var(--text-dim)', fontWeight: 600 }}>
+                  Real-time playback feeds
+                </span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '5px', paddingTop: '4px' }}>
+                {scenarios.map(s => {
+                  const isSelected = s.id === currentScenarioId;
+                  return (
+                    <div
+                      key={s.id}
+                      onClick={() => {
+                        onSelectScenario(s.id);
+                        setDropdownOpen(false);
+                      }}
+                      className={`popover-item ${isSelected ? 'selected' : ''}`}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '11px', flex: 1, minWidth: 0 }}>
+                        <div style={{
+                          width: '36px',
+                          height: '36px',
+                          borderRadius: '10px',
+                          background: isSelected ? 'var(--accent-cyan)' : 'rgba(255, 255, 255, 0.45)',
+                          color: isSelected ? '#ffffff' : 'var(--accent-cyan)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          flexShrink: 0,
+                          boxShadow: isSelected ? '0 2px 10px rgba(26, 115, 232, 0.35)' : 'inset 0 1px 1px rgba(255, 255, 255, 0.8)'
+                        }}>
+                          {getScenarioIcon(s.id)}
+                        </div>
+
+                        <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0 }}>
+                          <span style={{
+                            fontSize: '13px',
+                            fontWeight: 700,
+                            color: isSelected ? 'var(--accent-cyan)' : 'var(--text-main)',
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis'
+                          }}>
+                            {s.name}
+                          </span>
+                          {s.description && (
+                            <span style={{
+                              fontSize: '11px',
+                              color: isSelected ? 'var(--text-main)' : 'var(--text-muted)',
+                              whiteSpace: 'nowrap',
+                              overflow: 'hidden',
+                              textOverflow: 'ellipsis',
+                              marginTop: '2px',
+                              opacity: 0.85
+                            }}>
+                              {s.description}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+                        <span className="telemetry-tag" style={{ fontSize: '10px', fontWeight: 700, padding: '2px 8px', borderRadius: '12px' }}>
+                          {s.total_frames}f
+                        </span>
+                        {isSelected && <Check size={16} color="var(--accent-cyan)" />}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Google Maps Transit & Incident Chips */}

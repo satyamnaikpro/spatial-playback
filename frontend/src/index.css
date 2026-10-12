@@ -28,6 +28,16 @@
   --liquid-glass-pill-bg: rgba(255, 255, 255, 0.18);
   --liquid-glass-btn-hover: rgba(255, 255, 255, 0.38);
 
+  /* Elevated Popover Tokens (Light Mode - Enhanced Legibility & Frosted Blur) */
+  --popover-bg: rgba(255, 255, 255, 0.72);
+  --popover-border: rgba(255, 255, 255, 0.90);
+  --popover-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95), 0 24px 56px -10px rgba(0, 0, 0, 0.18), 0 8px 24px rgba(0, 0, 0, 0.08);
+  --popover-item-bg: rgba(255, 255, 255, 0.45);
+  --popover-item-hover: rgba(255, 255, 255, 0.90);
+  --popover-item-border: rgba(255, 255, 255, 0.75);
+  --popover-item-selected-bg: rgba(232, 240, 254, 0.88);
+  --popover-item-selected-border: var(--accent-cyan);
+
   /* Primary Brand Colors */
   --accent-cyan: #1a73e8;        /* Google Blue */
   --accent-cyan-hover: #1557b0;
@@ -84,6 +94,16 @@
   --liquid-glass-header-bg: rgba(255, 255, 255, 0.03);
   --liquid-glass-pill-bg: rgba(255, 255, 255, 0.06);
   --liquid-glass-btn-hover: rgba(255, 255, 255, 0.15);
+
+  /* Elevated Popover Tokens (Dark Mode) */
+  --popover-bg: rgba(26, 26, 32, 0.82);
+  --popover-border: rgba(255, 255, 255, 0.16);
+  --popover-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.2), 0 28px 64px rgba(0, 0, 0, 0.75), 0 8px 24px rgba(0, 0, 0, 0.4);
+  --popover-item-bg: rgba(255, 255, 255, 0.06);
+  --popover-item-hover: rgba(255, 255, 255, 0.14);
+  --popover-item-border: rgba(255, 255, 255, 0.10);
+  --popover-item-selected-bg: rgba(138, 180, 248, 0.22);
+  --popover-item-selected-border: var(--accent-cyan);
 
   /* Dark Mode Colors */
   --accent-cyan: #8ab4f8;        /* Google Dark Blue */
@@ -549,4 +569,48 @@ body, html, #root {
 .leaflet-control-zoom a:last-child {
   border-bottom: none !important;
 }
+
+/* ==========================================================
+   MACBOOK LIQUID GLASS ELEVATED POPOVER & MENU SYSTEM
+   ========================================================== */
+.liquid-glass-popover {
+  background: var(--popover-bg);
+  backdrop-filter: blur(40px) saturate(210%);
+  -webkit-backdrop-filter: blur(40px) saturate(210%);
+  border: 1px solid var(--popover-border);
+  box-shadow: var(--popover-shadow);
+  border-radius: 20px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.popover-item {
+  background: var(--popover-item-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--popover-item-border);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.65), 0 2px 8px rgba(0, 0, 0, 0.03);
+  border-radius: 14px;
+  padding: 11px 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: all 0.16s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.popover-item:hover {
+  background: var(--popover-item-hover);
+  border-color: var(--accent-cyan);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.95), 0 4px 14px rgba(26, 115, 232, 0.16);
+  transform: translateY(-1px);
+}
+
+.popover-item.selected {
+  background: var(--popover-item-selected-bg);
+  border: 1.5px solid var(--popover-item-selected-border);
+  box-shadow: 0 2px 14px rgba(26, 115, 232, 0.24);
+}
+
 
