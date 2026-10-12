@@ -72,8 +72,8 @@ export default function MapViewer({
       zoomControl: false
     });
 
-    // Google-style zoom controls in bottom-right corner
-    L.control.zoom({ position: 'bottomright' }).addTo(map);
+    // Google-style zoom controls in top-left corner
+    L.control.zoom({ position: 'topleft' }).addTo(map);
 
     const tileCfg = TILE_PROVIDERS[mapStyle] || TILE_PROVIDERS.street;
     const tileLayer = L.tileLayer(tileCfg.url, {
