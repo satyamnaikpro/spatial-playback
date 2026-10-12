@@ -1,89 +1,113 @@
 /* ==========================================================
-   SPATIAL PLAYBACK - GOOGLE MAPS THEME ENGINE (LIGHT & DARK)
+   SPATIAL PLAYBACK - MACBOOK LIQUID GLASS & GOOGLE MAPS THEME
    ========================================================== */
 
-/* 1. Google Maps Light Theme (Default Daylight) */
+/* 1. Light Mode (Daylight Liquid Glass & Google Maps) */
 :root, [data-theme="light"] {
   --bg-dark: #f8f9fa;
   --bg-dark-secondary: #f1f3f4;
-  --bg-panel: #ffffff;
-  --bg-panel-hover: #f8f9fa;
-  --bg-card: #ffffff;
-  --bg-card-hover: #f1f3f4;
-  --bg-input: #f1f3f4;
+  --bg-panel: rgba(255, 255, 255, 0.42);
+  --bg-panel-hover: rgba(255, 255, 255, 0.55);
+  --bg-card: rgba(255, 255, 255, 0.18);
+  --bg-card-hover: rgba(255, 255, 255, 0.32);
+  --bg-input: rgba(255, 255, 255, 0.35);
 
-  --border-subtle: #e8eaed;
-  --border-medium: #dadce0;
-  --border-glow: rgba(26, 115, 232, 0.3);
+  --border-subtle: rgba(255, 255, 255, 0.40);
+  --border-medium: rgba(255, 255, 255, 0.55);
+  --border-glow: rgba(26, 115, 232, 0.35);
 
-  /* Google Maps Primary Colors */
+  /* MacBook Liquid Glass Tokens (Light Mode - Translucent See-Through) */
+  --liquid-glass-bg: rgba(255, 255, 255, 0.26);
+  --liquid-glass-border: rgba(255, 255, 255, 0.55);
+  --liquid-glass-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.9), 0 20px 48px -10px rgba(0, 0, 0, 0.18), 0 6px 18px rgba(0, 0, 0, 0.08);
+  --liquid-glass-card-bg: rgba(255, 255, 255, 0.16);
+  --liquid-glass-card-hover: rgba(255, 255, 255, 0.30);
+  --liquid-glass-subcard-border: rgba(255, 255, 255, 0.45);
+  --liquid-glass-subcard-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.6), 0 4px 16px rgba(0, 0, 0, 0.05);
+  --liquid-glass-header-bg: rgba(255, 255, 255, 0.14);
+  --liquid-glass-pill-bg: rgba(255, 255, 255, 0.18);
+  --liquid-glass-btn-hover: rgba(255, 255, 255, 0.38);
+
+  /* Primary Brand Colors */
   --accent-cyan: #1a73e8;        /* Google Blue */
   --accent-cyan-hover: #1557b0;
-  --accent-cyan-bg: #e8f0fe;     /* Google Blue chip background */
-  --accent-cyan-glow: 0 2px 10px rgba(26, 115, 232, 0.25);
+  --accent-cyan-bg: rgba(26, 115, 232, 0.13);
+  --accent-cyan-glow: 0 4px 14px rgba(26, 115, 232, 0.28);
 
   --accent-emerald: #1e8e3e;     /* Google Green */
-  --accent-emerald-bg: #e6f4ea;
+  --accent-emerald-bg: rgba(30, 142, 62, 0.14);
   --accent-emerald-glow: 0 2px 10px rgba(30, 142, 62, 0.25);
 
-  --accent-amber: #ea8600;       /* Google Traffic Orange / Amber */
-  --accent-amber-bg: #fef7e0;
+  --accent-amber: #ea8600;       /* Traffic Orange */
+  --accent-amber-bg: rgba(234, 134, 0, 0.14);
 
-  --accent-rose: #d93025;        /* Google Alert Red */
-  --accent-rose-bg: #fce8e6;
+  --accent-rose: #d93025;        /* Alert Red */
+  --accent-rose-bg: rgba(217, 48, 37, 0.14);
 
-  --accent-violet: #8430ce;      /* Google Violet */
+  --accent-violet: #8430ce;
 
-  --text-main: #202124;          /* Google High Emphasis */
-  --text-muted: #5f6368;         /* Google Medium Emphasis */
-  --text-dim: #80868b;           /* Google Low Emphasis */
+  --text-main: #1f2023;          /* High Contrast */
+  --text-muted: #4e5257;
+  --text-dim: #606469;
 
-  --shadow-panel: 0 2px 6px rgba(60, 64, 67, 0.15), 0 1px 2px rgba(60, 64, 67, 0.2);
-  --shadow-card: 0 1px 3px rgba(60, 64, 67, 0.12), 0 1px 2px rgba(60, 64, 67, 0.24);
-  --shadow-popup: 0 4px 16px rgba(60, 64, 67, 0.2);
-  --map-bg: #e5e3df;             /* Google Maps Canvas Tan/Gray */
+  --shadow-panel: 0 4px 20px rgba(60, 64, 67, 0.12);
+  --shadow-card: 0 1px 4px rgba(60, 64, 67, 0.1);
+  --shadow-popup: 0 8px 28px rgba(60, 64, 67, 0.18);
+  --map-bg: #e5e3df;
 
   --font-sans: 'Google Sans', 'Roboto', 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
 }
 
-/* 2. Google Maps Dark Theme (Night Navigation) */
+/* 2. Dark Mode (MacBook Dark Liquid Glass) */
 [data-theme="dark"] {
   --bg-dark: #121212;
-  --bg-dark-secondary: #1e1e1e;
-  --bg-panel: #202124;
-  --bg-panel-hover: #292a2d;
-  --bg-card: #282a2c;
-  --bg-card-hover: #35363a;
-  --bg-input: #202124;
+  --bg-dark-secondary: #1a1a1c;
+  --bg-panel: rgba(24, 24, 28, 0.55);
+  --bg-panel-hover: rgba(34, 34, 40, 0.70);
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-card-hover: rgba(255, 255, 255, 0.10);
+  --bg-input: rgba(24, 24, 28, 0.65);
 
-  --border-subtle: #3c4043;
-  --border-medium: #5f6368;
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --border-medium: rgba(255, 255, 255, 0.16);
   --border-glow: rgba(138, 180, 248, 0.35);
 
-  /* Google Dark Mode Colors */
+  /* MacBook Liquid Glass Tokens (Dark Mode) */
+  --liquid-glass-bg: rgba(20, 20, 24, 0.48);
+  --liquid-glass-border: rgba(255, 255, 255, 0.14);
+  --liquid-glass-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.18), 0 24px 56px rgba(0, 0, 0, 0.68), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --liquid-glass-card-bg: rgba(255, 255, 255, 0.04);
+  --liquid-glass-card-hover: rgba(255, 255, 255, 0.10);
+  --liquid-glass-subcard-border: rgba(255, 255, 255, 0.08);
+  --liquid-glass-subcard-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.1), 0 4px 16px rgba(0, 0, 0, 0.25);
+  --liquid-glass-header-bg: rgba(255, 255, 255, 0.03);
+  --liquid-glass-pill-bg: rgba(255, 255, 255, 0.06);
+  --liquid-glass-btn-hover: rgba(255, 255, 255, 0.15);
+
+  /* Dark Mode Colors */
   --accent-cyan: #8ab4f8;        /* Google Dark Blue */
   --accent-cyan-hover: #aecbfa;
   --accent-cyan-bg: rgba(138, 180, 248, 0.15);
-  --accent-cyan-glow: 0 2px 12px rgba(138, 180, 248, 0.3);
+  --accent-cyan-glow: 0 4px 16px rgba(138, 180, 248, 0.3);
 
-  --accent-emerald: #81c995;     /* Google Dark Green */
+  --accent-emerald: #81c995;
   --accent-emerald-bg: rgba(129, 201, 149, 0.15);
   --accent-emerald-glow: 0 2px 10px rgba(129, 201, 149, 0.25);
 
-  --accent-amber: #fdd663;       /* Google Dark Amber */
+  --accent-amber: #fdd663;
   --accent-amber-bg: rgba(253, 214, 99, 0.15);
 
-  --accent-rose: #f28b82;        /* Google Dark Red */
+  --accent-rose: #f28b82;
   --accent-rose-bg: rgba(242, 139, 130, 0.15);
 
   --accent-violet: #c58af9;
 
-  --text-main: #e8eaed;
+  --text-main: #f1f3f4;
   --text-muted: #9aa0a6;
   --text-dim: #70757a;
 
-  --shadow-panel: 0 4px 16px rgba(0, 0, 0, 0.65);
+  --shadow-panel: 0 8px 30px rgba(0, 0, 0, 0.65);
   --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.5);
   --shadow-popup: 0 6px 24px rgba(0, 0, 0, 0.75);
   --map-bg: #1f1f1f;
@@ -107,7 +131,7 @@ body, html, #root {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Custom Google-styled Scrollbars */
+/* Custom MacBook styled scrollbars */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -123,13 +147,78 @@ body, html, #root {
   background: var(--text-dim);
 }
 
-/* Google Maps Floating Card / Glass Panel */
+/* Standard Glass Panel (Header & Sidebar) */
 .glass-panel {
   background: var(--bg-panel);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid var(--border-subtle);
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: var(--shadow-panel);
   transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ==========================================================
+   MACBOOK LIQUID GLASS SIGNATURE UTILITIES
+   ========================================================== */
+.liquid-glass-panel {
+  background: var(--liquid-glass-bg);
+  backdrop-filter: blur(30px) saturate(190%);
+  -webkit-backdrop-filter: blur(30px) saturate(190%);
+  border: 1px solid var(--liquid-glass-border);
+  box-shadow: var(--liquid-glass-shadow);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.liquid-glass-subcard {
+  background: var(--liquid-glass-card-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--liquid-glass-subcard-border);
+  box-shadow: var(--liquid-glass-subcard-shadow);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.liquid-glass-subcard:hover {
+  background: var(--liquid-glass-card-hover);
+  border-color: var(--accent-cyan);
+  transform: translateY(-1px);
+}
+
+.liquid-glass-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 7px 14px;
+  background: var(--liquid-glass-pill-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--liquid-glass-subcard-border);
+  border-radius: 18px;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.liquid-glass-btn:hover {
+  background: var(--liquid-glass-btn-hover);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+.liquid-glass-btn:active {
+  transform: scale(0.97);
+}
+.liquid-glass-btn.active {
+  background: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(26, 115, 232, 0.35);
 }
 
 /* Google Pill and Action Buttons */
@@ -139,7 +228,9 @@ body, html, #root {
   justify-content: center;
   gap: 7px;
   padding: 7px 14px;
-  background: var(--bg-card);
+  background: var(--liquid-glass-pill-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-medium);
   border-radius: 18px;
   color: var(--text-main);
@@ -151,10 +242,10 @@ body, html, #root {
   user-select: none;
 }
 .btn-glass:hover {
-  background: var(--bg-card-hover);
+  background: var(--liquid-glass-card-hover);
   border-color: var(--accent-cyan);
   color: var(--accent-cyan);
-  box-shadow: 0 1px 4px rgba(60, 64, 67, 0.15);
+  box-shadow: 0 1px 6px rgba(60, 64, 67, 0.15);
 }
 .btn-glass:active {
   transform: scale(0.98);
@@ -176,8 +267,10 @@ body, html, #root {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--bg-panel);
-  border: 1px solid var(--border-subtle);
+  background: var(--liquid-glass-pill-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--liquid-glass-subcard-border);
   color: var(--text-main);
   display: flex;
   align-items: center;
@@ -187,11 +280,11 @@ body, html, #root {
   transition: all 0.2s ease;
 }
 .btn-fab:hover {
-  background: var(--bg-card-hover);
+  background: var(--liquid-glass-card-hover);
   border-color: var(--accent-cyan);
   color: var(--accent-cyan);
   box-shadow: var(--shadow-panel);
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 /* Theme Toggle Button */
@@ -202,37 +295,38 @@ body, html, #root {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-card);
-  border: 1px solid var(--border-medium);
+  background: var(--liquid-glass-pill-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--liquid-glass-subcard-border);
   color: var(--text-main);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .btn-theme-toggle:hover {
-  background: var(--bg-card-hover);
+  background: var(--liquid-glass-card-hover);
   border-color: var(--accent-cyan);
-  transform: rotate(20deg) scale(1.05);
+  transform: rotate(20deg) scale(1.06);
 }
 
-/* Primary Play Button */
+/* Primary Play Button (MacBook / Apple Blue Glowing Disc) */
 .btn-primary-play {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  background: var(--accent-cyan);
-  border: none;
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-cyan-hover) 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.4);
+  box-shadow: 0 4px 16px rgba(26, 115, 232, 0.42);
   transition: all 0.15s ease;
 }
 .btn-primary-play:hover {
-  background: var(--accent-cyan-hover);
-  transform: scale(1.06);
-  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.5);
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px rgba(26, 115, 232, 0.55);
 }
 .btn-primary-play:active {
   transform: scale(0.96);
@@ -245,18 +339,22 @@ body, html, #root {
   width: 100%;
   height: 6px;
   border-radius: 3px;
-  background: var(--border-medium);
+  background: rgba(0, 0, 0, 0.08);
   outline: none;
   cursor: pointer;
+}
+[data-theme="dark"] .timeline-slider {
+  background: rgba(255, 255, 255, 0.15);
 }
 .timeline-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: var(--accent-cyan);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   cursor: grab;
   transition: transform 0.1s ease;
 }
@@ -268,7 +366,7 @@ body, html, #root {
   transform: scale(1.35);
 }
 
-/* Google Maps Telemetry Chip Pill */
+/* Telemetry Chip Pill */
 .telemetry-tag {
   font-family: var(--font-sans);
   font-size: 11px;
@@ -306,7 +404,7 @@ body, html, #root {
   height: 16px;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .google-switch.active .google-switch-thumb {
@@ -320,14 +418,16 @@ body, html, #root {
   transition: background-color 0.2s ease;
 }
 .leaflet-popup-content-wrapper {
-  background: var(--bg-panel) !important;
-  border: 1px solid var(--border-subtle) !important;
-  border-radius: 12px !important;
+  background: var(--liquid-glass-bg) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--liquid-glass-border) !important;
+  border-radius: 14px !important;
   color: var(--text-main) !important;
   box-shadow: var(--shadow-popup) !important;
 }
 .leaflet-popup-tip {
-  background: var(--bg-panel) !important;
+  background: var(--liquid-glass-bg) !important;
 }
 .leaflet-popup-content {
   margin: 12px 14px !important;
@@ -375,18 +475,78 @@ body, html, #root {
   align-items: center;
   justify-content: space-between;
   padding: 8px 12px;
-  border-radius: 10px;
-  background: var(--bg-card);
+  border-radius: 12px;
+  background: var(--liquid-glass-card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
   transition: all 0.15s ease;
   cursor: pointer;
   user-select: none;
 }
 .sidebar-toggle-row:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--border-medium);
+  background: var(--liquid-glass-card-hover);
+  border-color: var(--accent-cyan);
 }
 .sidebar-toggle-row.active {
   border-color: var(--border-glow);
   background: var(--accent-cyan-bg);
 }
+
+/* ==========================================================
+   RESPONSIVE PLAYBACK DOCK & NO-OVERLAP SPATIAL SYSTEM
+   ========================================================== */
+.playback-dock {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(760px, calc(100% - 32px));
+  max-width: 760px;
+  z-index: 950;
+  pointer-events: auto;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1), max-width 0.3s ease;
+}
+
+/* On wide screens with right HUD open, shift center to active map area */
+@media (min-width: 1200px) {
+  .playback-dock.hud-open {
+    left: calc(50% - 140px);
+    width: min(720px, calc(100% - 410px));
+    max-width: 720px;
+  }
+}
+
+/* Leaflet Zoom Controls Styled as MacBook Liquid Glass in Top-Left */
+.leaflet-top.leaflet-left {
+  top: 16px !important;
+  left: 16px !important;
+}
+.leaflet-control-zoom {
+  border: 1px solid var(--liquid-glass-border) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-panel) !important;
+  background: var(--liquid-glass-bg) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+}
+.leaflet-control-zoom a {
+  background: transparent !important;
+  color: var(--text-main) !important;
+  border-bottom: 1px solid var(--liquid-glass-subcard-border) !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  transition: all 0.15s ease !important;
+}
+.leaflet-control-zoom a:hover {
+  background: var(--liquid-glass-card-hover) !important;
+  color: var(--accent-cyan) !important;
+}
+.leaflet-control-zoom a:last-child {
+  border-bottom: none !important;
+}
+
