@@ -1,0 +1,7042 @@
+[
+  {
+    "time": 0,
+    "blue": [
+      {
+        "lat": 28.617205,
+        "lng": 77.194459
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.617205,
+        "lng": 77.194459,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 1,
+    "blue": [
+      {
+        "lat": 28.61719,
+        "lng": 77.195224
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61719,
+        "lng": 77.195224,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-1-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 2,
+    "blue": [
+      {
+        "lat": 28.617195,
+        "lng": 77.198706
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.617195,
+        "lng": 77.198706,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-2-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 3,
+    "blue": [
+      {
+        "lat": 28.61609,
+        "lng": 77.198841
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61609,
+        "lng": 77.198841,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-3-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 4,
+    "blue": [
+      {
+        "lat": 28.61614,
+        "lng": 77.198948
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61614,
+        "lng": 77.198948,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-4-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 5,
+    "blue": [
+      {
+        "lat": 28.615485,
+        "lng": 77.198937
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615485,
+        "lng": 77.198937,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-5-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 6,
+    "blue": [
+      {
+        "lat": 28.61454,
+        "lng": 77.198931
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61454,
+        "lng": 77.198931,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-6-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 7,
+    "blue": [
+      {
+        "lat": 28.614545,
+        "lng": 77.198886
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.614545,
+        "lng": 77.198886,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-7-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 8,
+    "blue": [
+      {
+        "lat": 28.61551,
+        "lng": 77.198881
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61551,
+        "lng": 77.198881,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-8-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 9,
+    "blue": [
+      {
+        "lat": 28.615545,
+        "lng": 77.198189
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615545,
+        "lng": 77.198189,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-9-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 10,
+    "blue": [
+      {
+        "lat": 28.61549,
+        "lng": 77.197587
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61549,
+        "lng": 77.197587,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-10-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 11,
+    "blue": [
+      {
+        "lat": 28.61455,
+        "lng": 77.197581
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61455,
+        "lng": 77.197581,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-11-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 12,
+    "blue": [
+      {
+        "lat": 28.614545,
+        "lng": 77.198251
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.614545,
+        "lng": 77.198251,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-12-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 13,
+    "blue": [
+      {
+        "lat": 28.61556,
+        "lng": 77.198211
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61556,
+        "lng": 77.198211,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-13-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 14,
+    "blue": [
+      {
+        "lat": 28.615505,
+        "lng": 77.198869
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615505,
+        "lng": 77.198869,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-14-0",
+        "title": "Active Incident #1",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 15,
+    "blue": [
+      {
+        "lat": 28.616095,
+        "lng": 77.198847
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.616095,
+        "lng": 77.198847,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-15-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-15-1",
+        "title": "Active Incident #2",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 16,
+    "blue": [
+      {
+        "lat": 28.615505,
+        "lng": 77.198869
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615505,
+        "lng": 77.198869,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-16-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-16-1",
+        "title": "Active Incident #2",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 17,
+    "blue": [
+      {
+        "lat": 28.615555,
+        "lng": 77.198206
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615555,
+        "lng": 77.198206,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-17-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-17-1",
+        "title": "Active Incident #2",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-17-2",
+        "title": "Active Incident #3",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 18,
+    "blue": [
+      {
+        "lat": 28.615505,
+        "lng": 77.198869
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615505,
+        "lng": 77.198869,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-18-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-18-1",
+        "title": "Active Incident #2",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-18-2",
+        "title": "Active Incident #3",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 19,
+    "blue": [
+      {
+        "lat": 28.615495,
+        "lng": 77.198926
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615495,
+        "lng": 77.198926,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-19-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-19-1",
+        "title": "Active Incident #2",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-19-2",
+        "title": "Active Incident #3",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 20,
+    "blue": [
+      {
+        "lat": 28.615505,
+        "lng": 77.198869
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615505,
+        "lng": 77.198869,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-20-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-20-1",
+        "title": "Active Incident #2",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-20-2",
+        "title": "Active Incident #3",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 21,
+    "blue": [
+      {
+        "lat": 28.614545,
+        "lng": 77.198886
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.614545,
+        "lng": 77.198886,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-21-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-21-1",
+        "title": "Active Incident #2",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-21-2",
+        "title": "Active Incident #3",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 22,
+    "blue": [
+      {
+        "lat": 28.61455,
+        "lng": 77.198959
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61455,
+        "lng": 77.198959,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-22-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-22-1",
+        "title": "Active Incident #2",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-22-2",
+        "title": "Active Incident #3",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 23,
+    "blue": [
+      {
+        "lat": 28.61549,
+        "lng": 77.198954
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61549,
+        "lng": 77.198954,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-23-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-23-1",
+        "title": "Active Incident #2",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-23-2",
+        "title": "Active Incident #3",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 24,
+    "blue": [
+      {
+        "lat": 28.615505,
+        "lng": 77.198869
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615505,
+        "lng": 77.198869,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-24-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-24-1",
+        "title": "Active Incident #2",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-24-2",
+        "title": "Active Incident #3",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-24-3",
+        "title": "Active Incident #4",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 25,
+    "blue": [
+      {
+        "lat": 28.61549,
+        "lng": 77.198954
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61549,
+        "lng": 77.198954,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-25-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-25-1",
+        "title": "Active Incident #2",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-25-2",
+        "title": "Active Incident #3",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-25-3",
+        "title": "Active Incident #4",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-25-4",
+        "title": "Active Incident #5",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 26,
+    "blue": [
+      {
+        "lat": 28.61455,
+        "lng": 77.198959
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61202,
+        "lng": 77.19559
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61455,
+        "lng": 77.198959,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-26-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-26-1",
+        "title": "Active Incident #2",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-26-2",
+        "title": "Active Incident #3",
+        "lat": 28.61202,
+        "lng": 77.19559,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-26-3",
+        "title": "Active Incident #4",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-26-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-26-5",
+        "title": "Active Incident #6",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 27,
+    "blue": [
+      {
+        "lat": 28.614525,
+        "lng": 77.198903
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62643,
+        "lng": 77.221206
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61202,
+        "lng": 77.19559
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.614525,
+        "lng": 77.198903,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-27-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-27-1",
+        "title": "Active Incident #2",
+        "lat": 28.62643,
+        "lng": 77.221206,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-27-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-27-3",
+        "title": "Active Incident #4",
+        "lat": 28.61202,
+        "lng": 77.19559,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-27-4",
+        "title": "Active Incident #5",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-27-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-27-6",
+        "title": "Active Incident #7",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 28,
+    "blue": [
+      {
+        "lat": 28.615505,
+        "lng": 77.198869
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62643,
+        "lng": 77.221206
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61202,
+        "lng": 77.19559
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.60636,
+        "lng": 77.21782
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615505,
+        "lng": 77.198869,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-28-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-28-1",
+        "title": "Active Incident #2",
+        "lat": 28.62643,
+        "lng": 77.221206,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-28-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-28-3",
+        "title": "Active Incident #4",
+        "lat": 28.61202,
+        "lng": 77.19559,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-28-4",
+        "title": "Active Incident #5",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-28-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-28-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-28-7",
+        "title": "Active Incident #8",
+        "lat": 28.60636,
+        "lng": 77.21782,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 29,
+    "blue": [
+      {
+        "lat": 28.61549,
+        "lng": 77.198954
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62643,
+        "lng": 77.221206
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61202,
+        "lng": 77.19559
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61549,
+        "lng": 77.198954,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-29-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-29-1",
+        "title": "Active Incident #2",
+        "lat": 28.62643,
+        "lng": 77.221206,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-29-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-29-3",
+        "title": "Active Incident #4",
+        "lat": 28.61202,
+        "lng": 77.19559,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-29-4",
+        "title": "Active Incident #5",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-29-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-29-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 29
+      }
+    ]
+  },
+  {
+    "time": 30,
+    "blue": [
+      {
+        "lat": 28.61555,
+        "lng": 77.199393
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62643,
+        "lng": 77.221206
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61202,
+        "lng": 77.19559
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61555,
+        "lng": 77.199393,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-30-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-30-1",
+        "title": "Active Incident #2",
+        "lat": 28.62643,
+        "lng": 77.221206,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-30-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-30-3",
+        "title": "Active Incident #4",
+        "lat": 28.61202,
+        "lng": 77.19559,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-30-4",
+        "title": "Active Incident #5",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-30-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-30-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 30
+      }
+    ]
+  },
+  {
+    "time": 31,
+    "blue": [
+      {
+        "lat": 28.615495,
+        "lng": 77.199522
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62643,
+        "lng": 77.221206
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61202,
+        "lng": 77.19559
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615495,
+        "lng": 77.199522,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-31-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-31-1",
+        "title": "Active Incident #2",
+        "lat": 28.62643,
+        "lng": 77.221206,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-31-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-31-3",
+        "title": "Active Incident #4",
+        "lat": 28.61202,
+        "lng": 77.19559,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-31-4",
+        "title": "Active Incident #5",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-31-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-31-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-31-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 31
+      }
+    ]
+  },
+  {
+    "time": 32,
+    "blue": [
+      {
+        "lat": 28.615505,
+        "lng": 77.199904
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62643,
+        "lng": 77.221206
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61202,
+        "lng": 77.19559
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615505,
+        "lng": 77.199904,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-32-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-32-1",
+        "title": "Active Incident #2",
+        "lat": 28.62643,
+        "lng": 77.221206,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-32-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-32-3",
+        "title": "Active Incident #4",
+        "lat": 28.61202,
+        "lng": 77.19559,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-32-4",
+        "title": "Active Incident #5",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-32-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-32-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-32-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 32
+      }
+    ]
+  },
+  {
+    "time": 33,
+    "blue": [
+      {
+        "lat": 28.61549,
+        "lng": 77.199511
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62643,
+        "lng": 77.221206
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61202,
+        "lng": 77.19559
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61549,
+        "lng": 77.199511,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-33-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-33-1",
+        "title": "Active Incident #2",
+        "lat": 28.62643,
+        "lng": 77.221206,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-33-2",
+        "title": "Active Incident #3",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-33-3",
+        "title": "Active Incident #4",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-33-4",
+        "title": "Active Incident #5",
+        "lat": 28.61202,
+        "lng": 77.19559,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-33-5",
+        "title": "Active Incident #6",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-33-6",
+        "title": "Active Incident #7",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-33-7",
+        "title": "Active Incident #8",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-33-8",
+        "title": "Active Incident #9",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 33
+      }
+    ]
+  },
+  {
+    "time": 34,
+    "blue": [
+      {
+        "lat": 28.615505,
+        "lng": 77.199904
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62643,
+        "lng": 77.221206
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61202,
+        "lng": 77.19559
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615505,
+        "lng": 77.199904,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-34-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-34-1",
+        "title": "Active Incident #2",
+        "lat": 28.62643,
+        "lng": 77.221206,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-34-2",
+        "title": "Active Incident #3",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-34-3",
+        "title": "Active Incident #4",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-34-4",
+        "title": "Active Incident #5",
+        "lat": 28.61202,
+        "lng": 77.19559,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-34-5",
+        "title": "Active Incident #6",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-34-6",
+        "title": "Active Incident #7",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-34-7",
+        "title": "Active Incident #8",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-34-8",
+        "title": "Active Incident #9",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 34
+      }
+    ]
+  },
+  {
+    "time": 35,
+    "blue": [
+      {
+        "lat": 28.61456,
+        "lng": 77.199854
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62643,
+        "lng": 77.221206
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61456,
+        "lng": 77.199854,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-35-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-35-1",
+        "title": "Active Incident #2",
+        "lat": 28.62643,
+        "lng": 77.221206,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-35-2",
+        "title": "Active Incident #3",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-35-3",
+        "title": "Active Incident #4",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-35-4",
+        "title": "Active Incident #5",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-35-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-35-6",
+        "title": "Active Incident #7",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-35-7",
+        "title": "Active Incident #8",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-35-8",
+        "title": "Active Incident #9",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-35-9",
+        "title": "Active Incident #10",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 35
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 35
+      }
+    ]
+  },
+  {
+    "time": 36,
+    "blue": [
+      {
+        "lat": 28.614545,
+        "lng": 77.199398
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61146,
+        "lng": 77.20423
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.614545,
+        "lng": 77.199398,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-36-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-36-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-36-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-36-3",
+        "title": "Active Incident #4",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-36-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-36-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-36-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-36-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-36-8",
+        "title": "Active Incident #9",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 36
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 36
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 36
+      }
+    ]
+  },
+  {
+    "time": 37,
+    "blue": [
+      {
+        "lat": 28.61454,
+        "lng": 77.198943
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.611585,
+        "lng": 77.204286
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61454,
+        "lng": 77.198943,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-37-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-37-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-37-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-37-3",
+        "title": "Active Incident #4",
+        "lat": 28.611585,
+        "lng": 77.204286,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-37-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-37-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-37-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-37-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-37-8",
+        "title": "Active Incident #9",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-37-9",
+        "title": "Active Incident #10",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 37
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 37
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 37
+      }
+    ]
+  },
+  {
+    "time": 38,
+    "blue": [
+      {
+        "lat": 28.613195,
+        "lng": 77.198959
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.611585,
+        "lng": 77.204286
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.613195,
+        "lng": 77.198959,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-38-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-38-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-38-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-38-3",
+        "title": "Active Incident #4",
+        "lat": 28.611585,
+        "lng": 77.204286,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-38-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-38-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-38-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-38-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-38-8",
+        "title": "Active Incident #9",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-38-9",
+        "title": "Active Incident #10",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 38
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 38
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 38
+      }
+    ]
+  },
+  {
+    "time": 39,
+    "blue": [
+      {
+        "lat": 28.61455,
+        "lng": 77.198931
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61455,
+        "lng": 77.198931,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-39-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-39-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-39-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-39-3",
+        "title": "Active Incident #4",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-39-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-39-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-39-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-39-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-39-8",
+        "title": "Active Incident #9",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-39-9",
+        "title": "Active Incident #10",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 39
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 39
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 39
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 39
+      }
+    ]
+  },
+  {
+    "time": 40,
+    "blue": [
+      {
+        "lat": 28.614545,
+        "lng": 77.198881
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.614545,
+        "lng": 77.198881,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-40-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-1",
+        "title": "Active Incident #2",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-2",
+        "title": "Active Incident #3",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-3",
+        "title": "Active Incident #4",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-4",
+        "title": "Active Incident #5",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-6",
+        "title": "Active Incident #7",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-7",
+        "title": "Active Incident #8",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-8",
+        "title": "Active Incident #9",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-9",
+        "title": "Active Incident #10",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-40-10",
+        "title": "Active Incident #11",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 40
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 40
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 40
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 40
+      }
+    ]
+  },
+  {
+    "time": 41,
+    "blue": [
+      {
+        "lat": 28.61454,
+        "lng": 77.198256
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61454,
+        "lng": 77.198256,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-41-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-1",
+        "title": "Active Incident #2",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-2",
+        "title": "Active Incident #3",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-3",
+        "title": "Active Incident #4",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-4",
+        "title": "Active Incident #5",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-6",
+        "title": "Active Incident #7",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-7",
+        "title": "Active Incident #8",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-8",
+        "title": "Active Incident #9",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-9",
+        "title": "Active Incident #10",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-41-10",
+        "title": "Active Incident #11",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 41
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 41
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 41
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 41
+      }
+    ]
+  },
+  {
+    "time": 42,
+    "blue": [
+      {
+        "lat": 28.61455,
+        "lng": 77.197581
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61455,
+        "lng": 77.197581,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-42-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-1",
+        "title": "Active Incident #2",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-2",
+        "title": "Active Incident #3",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-3",
+        "title": "Active Incident #4",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-4",
+        "title": "Active Incident #5",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-6",
+        "title": "Active Incident #7",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-7",
+        "title": "Active Incident #8",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-8",
+        "title": "Active Incident #9",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-9",
+        "title": "Active Incident #10",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-42-10",
+        "title": "Active Incident #11",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 42
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 42
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 42
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 42
+      }
+    ]
+  },
+  {
+    "time": 43,
+    "blue": [
+      {
+        "lat": 28.613595,
+        "lng": 77.197598
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.62776,
+        "lng": 77.217933
+      },
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.613595,
+        "lng": 77.197598,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-43-0",
+        "title": "Active Incident #1",
+        "lat": 28.62776,
+        "lng": 77.217933,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-1",
+        "title": "Active Incident #2",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-2",
+        "title": "Active Incident #3",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-3",
+        "title": "Active Incident #4",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-4",
+        "title": "Active Incident #5",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-5",
+        "title": "Active Incident #6",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-6",
+        "title": "Active Incident #7",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-7",
+        "title": "Active Incident #8",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-8",
+        "title": "Active Incident #9",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-9",
+        "title": "Active Incident #10",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-43-10",
+        "title": "Active Incident #11",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 43
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 43
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 43
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 43
+      }
+    ]
+  },
+  {
+    "time": 44,
+    "blue": [
+      {
+        "lat": 28.613615,
+        "lng": 77.196979
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.60506,
+        "lng": 77.196017
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.613615,
+        "lng": 77.196979,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-44-0",
+        "title": "Active Incident #1",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-44-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-44-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-44-3",
+        "title": "Active Incident #4",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-44-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-44-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-44-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-44-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-44-8",
+        "title": "Active Incident #9",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-44-9",
+        "title": "Active Incident #10",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 44
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 44
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 44
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 44
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 44
+      }
+    ]
+  },
+  {
+    "time": 45,
+    "blue": [
+      {
+        "lat": 28.6145,
+        "lng": 77.196962
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.6145,
+        "lng": 77.196962,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-45-0",
+        "title": "Active Incident #1",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-45-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-45-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-45-3",
+        "title": "Active Incident #4",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-45-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-45-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-45-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-45-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-45-8",
+        "title": "Active Incident #9",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 45
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 45
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 45
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 45
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 45
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 45
+      }
+    ]
+  },
+  {
+    "time": 46,
+    "blue": [
+      {
+        "lat": 28.6154,
+        "lng": 77.196917
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.6154,
+        "lng": 77.196917,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-46-0",
+        "title": "Active Incident #1",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-46-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-46-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-46-3",
+        "title": "Active Incident #4",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-46-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-46-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-46-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-46-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-46-8",
+        "title": "Active Incident #9",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 46
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 46
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 46
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 46
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 46
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 46
+      }
+    ]
+  },
+  {
+    "time": 47,
+    "blue": [
+      {
+        "lat": 28.61525,
+        "lng": 77.196569
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61525,
+        "lng": 77.196569,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-47-0",
+        "title": "Active Incident #1",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-47-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-47-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-47-3",
+        "title": "Active Incident #4",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-47-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-47-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-47-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-47-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-47-8",
+        "title": "Active Incident #9",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 47
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 47
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 47
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 47
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 47
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 47
+      }
+    ]
+  },
+  {
+    "time": 48,
+    "blue": [
+      {
+        "lat": 28.61525,
+        "lng": 77.196344
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61525,
+        "lng": 77.196344,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-48-0",
+        "title": "Active Incident #1",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-48-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-48-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-48-3",
+        "title": "Active Incident #4",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-48-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-48-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-48-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-48-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-48-8",
+        "title": "Active Incident #9",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 48
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 48
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 48
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 48
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 48
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 48
+      }
+    ]
+  },
+  {
+    "time": 49,
+    "blue": [
+      {
+        "lat": 28.61549,
+        "lng": 77.196012
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61549,
+        "lng": 77.196012,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-49-0",
+        "title": "Active Incident #1",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-49-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-49-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-49-3",
+        "title": "Active Incident #4",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-49-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-49-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-49-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-49-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-49-8",
+        "title": "Active Incident #9",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 49
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 49
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 49
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 49
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 49
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 49
+      }
+    ]
+  },
+  {
+    "time": 50,
+    "blue": [
+      {
+        "lat": 28.61577,
+        "lng": 77.196282
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.62103,
+        "lng": 77.220981
+      },
+      {
+        "lat": 28.61516,
+        "lng": 77.219733
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61577,
+        "lng": 77.196282,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-50-0",
+        "title": "Active Incident #1",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-50-1",
+        "title": "Active Incident #2",
+        "lat": 28.62103,
+        "lng": 77.220981,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-50-2",
+        "title": "Active Incident #3",
+        "lat": 28.61516,
+        "lng": 77.219733,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-50-3",
+        "title": "Active Incident #4",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-50-4",
+        "title": "Active Incident #5",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-50-5",
+        "title": "Active Incident #6",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-50-6",
+        "title": "Active Incident #7",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-50-7",
+        "title": "Active Incident #8",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-50-8",
+        "title": "Active Incident #9",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 50
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 50
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 50
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 50
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 50
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 50
+      }
+    ]
+  },
+  {
+    "time": 51,
+    "blue": [
+      {
+        "lat": 28.615845,
+        "lng": 77.196338
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.623935,
+        "lng": 77.217522
+      },
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.615845,
+        "lng": 77.196338,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-51-0",
+        "title": "Active Incident #1",
+        "lat": 28.623935,
+        "lng": 77.217522,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-51-1",
+        "title": "Active Incident #2",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-51-2",
+        "title": "Active Incident #3",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-51-3",
+        "title": "Active Incident #4",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-51-4",
+        "title": "Active Incident #5",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-51-5",
+        "title": "Active Incident #6",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-51-6",
+        "title": "Active Incident #7",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 51
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 51
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.62104,
+        "lng": 77.22097,
+        "color": "#10b981",
+        "resolved_at_step": 51
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.61515,
+        "lng": 77.219744,
+        "color": "#10b981",
+        "resolved_at_step": 51
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 51
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 51
+      },
+      {
+        "id": "resolved-7",
+        "title": "Cleared Incident #7",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 51
+      },
+      {
+        "id": "resolved-8",
+        "title": "Cleared Incident #8",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 51
+      }
+    ]
+  },
+  {
+    "time": 52,
+    "blue": [
+      {
+        "lat": 28.616095,
+        "lng": 77.196563
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.60816,
+        "lng": 77.221105
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.616095,
+        "lng": 77.196563,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-52-0",
+        "title": "Active Incident #1",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-52-1",
+        "title": "Active Incident #2",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-52-2",
+        "title": "Active Incident #3",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-52-3",
+        "title": "Active Incident #4",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-52-4",
+        "title": "Active Incident #5",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-52-5",
+        "title": "Active Incident #6",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 52
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 52
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.6239,
+        "lng": 77.21755,
+        "color": "#10b981",
+        "resolved_at_step": 52
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.62104,
+        "lng": 77.22097,
+        "color": "#10b981",
+        "resolved_at_step": 52
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.61515,
+        "lng": 77.219744,
+        "color": "#10b981",
+        "resolved_at_step": 52
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 52
+      },
+      {
+        "id": "resolved-7",
+        "title": "Cleared Incident #7",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 52
+      },
+      {
+        "id": "resolved-8",
+        "title": "Cleared Incident #8",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 52
+      },
+      {
+        "id": "resolved-9",
+        "title": "Cleared Incident #9",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 52
+      }
+    ]
+  },
+  {
+    "time": 53,
+    "blue": [
+      {
+        "lat": 28.61599,
+        "lng": 77.196687
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      },
+      {
+        "lat": 28.59993,
+        "lng": 77.208719
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61599,
+        "lng": 77.196687,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-53-0",
+        "title": "Active Incident #1",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-53-1",
+        "title": "Active Incident #2",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-53-2",
+        "title": "Active Incident #3",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-53-3",
+        "title": "Active Incident #4",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-53-4",
+        "title": "Active Incident #5",
+        "lat": 28.59993,
+        "lng": 77.208719,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.6239,
+        "lng": 77.21755,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.62104,
+        "lng": 77.22097,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.61515,
+        "lng": 77.219744,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      },
+      {
+        "id": "resolved-7",
+        "title": "Cleared Incident #7",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      },
+      {
+        "id": "resolved-8",
+        "title": "Cleared Incident #8",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      },
+      {
+        "id": "resolved-9",
+        "title": "Cleared Incident #9",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      },
+      {
+        "id": "resolved-10",
+        "title": "Cleared Incident #10",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 53
+      }
+    ]
+  },
+  {
+    "time": 54,
+    "blue": [
+      {
+        "lat": 28.61611,
+        "lng": 77.196968
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.61006,
+        "lng": 77.219958
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61611,
+        "lng": 77.196968,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-54-0",
+        "title": "Active Incident #1",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-54-1",
+        "title": "Active Incident #2",
+        "lat": 28.61006,
+        "lng": 77.219958,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-54-2",
+        "title": "Active Incident #3",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-54-3",
+        "title": "Active Incident #4",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.6239,
+        "lng": 77.21755,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.62104,
+        "lng": 77.22097,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.61515,
+        "lng": 77.219744,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-7",
+        "title": "Cleared Incident #7",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-8",
+        "title": "Cleared Incident #8",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-9",
+        "title": "Cleared Incident #9",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-10",
+        "title": "Cleared Incident #10",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      },
+      {
+        "id": "resolved-11",
+        "title": "Cleared Incident #11",
+        "lat": 28.59994,
+        "lng": 77.208708,
+        "color": "#10b981",
+        "resolved_at_step": 54
+      }
+    ]
+  },
+  {
+    "time": 55,
+    "blue": [
+      {
+        "lat": 28.61599,
+        "lng": 77.196687
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61599,
+        "lng": 77.196687,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-55-0",
+        "title": "Active Incident #1",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-55-1",
+        "title": "Active Incident #2",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-55-2",
+        "title": "Active Incident #3",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.6239,
+        "lng": 77.21755,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.62104,
+        "lng": 77.22097,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.61515,
+        "lng": 77.219744,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-7",
+        "title": "Cleared Incident #7",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-8",
+        "title": "Cleared Incident #8",
+        "lat": 28.61005,
+        "lng": 77.219969,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-9",
+        "title": "Cleared Incident #9",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-10",
+        "title": "Cleared Incident #10",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-11",
+        "title": "Cleared Incident #11",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      },
+      {
+        "id": "resolved-12",
+        "title": "Cleared Incident #12",
+        "lat": 28.59994,
+        "lng": 77.208708,
+        "color": "#10b981",
+        "resolved_at_step": 55
+      }
+    ]
+  },
+  {
+    "time": 56,
+    "blue": [
+      {
+        "lat": 28.61609,
+        "lng": 77.196586
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61609,
+        "lng": 77.196586,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-56-0",
+        "title": "Active Incident #1",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-56-1",
+        "title": "Active Incident #2",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-56-2",
+        "title": "Active Incident #3",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.6239,
+        "lng": 77.21755,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.62104,
+        "lng": 77.22097,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.61515,
+        "lng": 77.219744,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-7",
+        "title": "Cleared Incident #7",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-8",
+        "title": "Cleared Incident #8",
+        "lat": 28.61005,
+        "lng": 77.219969,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-9",
+        "title": "Cleared Incident #9",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-10",
+        "title": "Cleared Incident #10",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-11",
+        "title": "Cleared Incident #11",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      },
+      {
+        "id": "resolved-12",
+        "title": "Cleared Incident #12",
+        "lat": 28.59994,
+        "lng": 77.208708,
+        "color": "#10b981",
+        "resolved_at_step": 56
+      }
+    ]
+  },
+  {
+    "time": 57,
+    "blue": [
+      {
+        "lat": 28.61584,
+        "lng": 77.196349
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61584,
+        "lng": 77.196349,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-57-0",
+        "title": "Active Incident #1",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-57-1",
+        "title": "Active Incident #2",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-57-2",
+        "title": "Active Incident #3",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.6239,
+        "lng": 77.21755,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.62104,
+        "lng": 77.22097,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.61515,
+        "lng": 77.219744,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-7",
+        "title": "Cleared Incident #7",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-8",
+        "title": "Cleared Incident #8",
+        "lat": 28.61005,
+        "lng": 77.219969,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-9",
+        "title": "Cleared Incident #9",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-10",
+        "title": "Cleared Incident #10",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-11",
+        "title": "Cleared Incident #11",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      },
+      {
+        "id": "resolved-12",
+        "title": "Cleared Incident #12",
+        "lat": 28.59994,
+        "lng": 77.208708,
+        "color": "#10b981",
+        "resolved_at_step": 57
+      }
+    ]
+  },
+  {
+    "time": 58,
+    "blue": [
+      {
+        "lat": 28.61609,
+        "lng": 77.196586
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61609,
+        "lng": 77.196586,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-58-0",
+        "title": "Active Incident #1",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-58-1",
+        "title": "Active Incident #2",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-58-2",
+        "title": "Active Incident #3",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.6239,
+        "lng": 77.21755,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.62104,
+        "lng": 77.22097,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.61515,
+        "lng": 77.219744,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-7",
+        "title": "Cleared Incident #7",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-8",
+        "title": "Cleared Incident #8",
+        "lat": 28.61005,
+        "lng": 77.219969,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-9",
+        "title": "Cleared Incident #9",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-10",
+        "title": "Cleared Incident #10",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-11",
+        "title": "Cleared Incident #11",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      },
+      {
+        "id": "resolved-12",
+        "title": "Cleared Incident #12",
+        "lat": 28.59994,
+        "lng": 77.208708,
+        "color": "#10b981",
+        "resolved_at_step": 58
+      }
+    ]
+  },
+  {
+    "time": 59,
+    "blue": [
+      {
+        "lat": 28.61599,
+        "lng": 77.196687
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.61175,
+        "lng": 77.204331
+      },
+      {
+        "lat": 28.60995,
+        "lng": 77.211284
+      },
+      {
+        "lat": 28.606225,
+        "lng": 77.195573
+      }
+    ],
+    "entities": [
+      {
+        "id": "patrol-1",
+        "name": "Rapid Response Patrol",
+        "lat": 28.61599,
+        "lng": 77.196687,
+        "speed_kmh": 42.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "incident-59-0",
+        "title": "Active Incident #1",
+        "lat": 28.61175,
+        "lng": 77.204331,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-59-1",
+        "title": "Active Incident #2",
+        "lat": 28.60995,
+        "lng": 77.211284,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      },
+      {
+        "id": "incident-59-2",
+        "title": "Active Incident #3",
+        "lat": 28.606225,
+        "lng": 77.195573,
+        "severity": "warning",
+        "description": "Unresolved emergency dispatch at intersection",
+        "color": "#f97316"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "resolved-1",
+        "title": "Cleared Incident #1",
+        "lat": 28.62775,
+        "lng": 77.217944,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-2",
+        "title": "Cleared Incident #2",
+        "lat": 28.62644,
+        "lng": 77.221195,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-3",
+        "title": "Cleared Incident #3",
+        "lat": 28.6239,
+        "lng": 77.21755,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-4",
+        "title": "Cleared Incident #4",
+        "lat": 28.62104,
+        "lng": 77.22097,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-5",
+        "title": "Cleared Incident #5",
+        "lat": 28.61515,
+        "lng": 77.219744,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-6",
+        "title": "Cleared Incident #6",
+        "lat": 28.612,
+        "lng": 77.195613,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-7",
+        "title": "Cleared Incident #7",
+        "lat": 28.61146,
+        "lng": 77.20423,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-8",
+        "title": "Cleared Incident #8",
+        "lat": 28.61005,
+        "lng": 77.219969,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-9",
+        "title": "Cleared Incident #9",
+        "lat": 28.60816,
+        "lng": 77.221105,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-10",
+        "title": "Cleared Incident #10",
+        "lat": 28.60635,
+        "lng": 77.217831,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-11",
+        "title": "Cleared Incident #11",
+        "lat": 28.60506,
+        "lng": 77.196017,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      },
+      {
+        "id": "resolved-12",
+        "title": "Cleared Incident #12",
+        "lat": 28.59994,
+        "lng": 77.208708,
+        "color": "#10b981",
+        "resolved_at_step": 59
+      }
+    ]
+  }
+]

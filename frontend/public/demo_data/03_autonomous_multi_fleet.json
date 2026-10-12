@@ -1,0 +1,2567 @@
+[
+  {
+    "time": 0.0,
+    "blue": [
+      {
+        "lat": 28.6139,
+        "lng": 77.229
+      },
+      {
+        "lat": 28.6079,
+        "lng": 77.226727
+      },
+      {
+        "lat": 28.6039,
+        "lng": 77.194
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.6139,
+        "lng": 77.229,
+        "speed_kmh": 35.0,
+        "heading_deg": 90.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.6079,
+        "lng": 77.226727,
+        "speed_kmh": 47.0,
+        "heading_deg": 80.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6039,
+        "lng": 77.194,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 1.0,
+    "blue": [
+      {
+        "lat": 28.615988,
+        "lng": 77.228805
+      },
+      {
+        "lat": 28.60587,
+        "lng": 77.226989
+      },
+      {
+        "lat": 28.6045,
+        "lng": 77.1948
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.615988,
+        "lng": 77.228805,
+        "speed_kmh": 38.8,
+        "heading_deg": 98.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.60587,
+        "lng": 77.226989,
+        "speed_kmh": 46.6,
+        "heading_deg": 88.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6045,
+        "lng": 77.1948,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 2.0,
+    "blue": [
+      {
+        "lat": 28.618035,
+        "lng": 77.228225
+      },
+      {
+        "lat": 28.604192,
+        "lng": 77.226901
+      },
+      {
+        "lat": 28.6051,
+        "lng": 77.1956
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.618035,
+        "lng": 77.228225,
+        "speed_kmh": 41.7,
+        "heading_deg": 106.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.604192,
+        "lng": 77.226901,
+        "speed_kmh": 45.5,
+        "heading_deg": 96.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6051,
+        "lng": 77.1956,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 3.0,
+    "blue": [
+      {
+        "lat": 28.620001,
+        "lng": 77.227271
+      },
+      {
+        "lat": 28.602937,
+        "lng": 77.226465
+      },
+      {
+        "lat": 28.6057,
+        "lng": 77.1964
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.620001,
+        "lng": 77.227271,
+        "speed_kmh": 43.0,
+        "heading_deg": 114.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.602937,
+        "lng": 77.226465,
+        "speed_kmh": 43.8,
+        "heading_deg": 104.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6057,
+        "lng": 77.1964,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 4.0,
+    "blue": [
+      {
+        "lat": 28.621849,
+        "lng": 77.225961
+      },
+      {
+        "lat": 28.602162,
+        "lng": 77.225689
+      },
+      {
+        "lat": 28.6063,
+        "lng": 77.1972
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.621849,
+        "lng": 77.225961,
+        "speed_kmh": 42.3,
+        "heading_deg": 122.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.602162,
+        "lng": 77.225689,
+        "speed_kmh": 41.9,
+        "heading_deg": 112.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6063,
+        "lng": 77.1972,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 5.0,
+    "blue": [
+      {
+        "lat": 28.623542,
+        "lng": 77.224321
+      },
+      {
+        "lat": 28.6019,
+        "lng": 77.224588
+      },
+      {
+        "lat": 28.6069,
+        "lng": 77.198
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.623542,
+        "lng": 77.224321,
+        "speed_kmh": 39.8,
+        "heading_deg": 130.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.6019,
+        "lng": 77.224588,
+        "speed_kmh": 39.9,
+        "heading_deg": 120.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6069,
+        "lng": 77.198,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 6.0,
+    "blue": [
+      {
+        "lat": 28.625047,
+        "lng": 77.222383
+      },
+      {
+        "lat": 28.602162,
+        "lng": 77.223184
+      },
+      {
+        "lat": 28.6075,
+        "lng": 77.1988
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.625047,
+        "lng": 77.222383,
+        "speed_kmh": 36.1,
+        "heading_deg": 138.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.602162,
+        "lng": 77.223184,
+        "speed_kmh": 38.3,
+        "heading_deg": 128.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6075,
+        "lng": 77.1988,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 7.0,
+    "blue": [
+      {
+        "lat": 28.626336,
+        "lng": 77.220184
+      },
+      {
+        "lat": 28.602937,
+        "lng": 77.221504
+      },
+      {
+        "lat": 28.6081,
+        "lng": 77.1996
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.626336,
+        "lng": 77.220184,
+        "speed_kmh": 32.2,
+        "heading_deg": 146.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.602937,
+        "lng": 77.221504,
+        "speed_kmh": 37.3,
+        "heading_deg": 136.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6081,
+        "lng": 77.1996,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 8.0,
+    "blue": [
+      {
+        "lat": 28.627382,
+        "lng": 77.217767
+      },
+      {
+        "lat": 28.604192,
+        "lng": 77.21958
+      },
+      {
+        "lat": 28.6087,
+        "lng": 77.2004
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.618,
+        "lng": 77.215
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.627382,
+        "lng": 77.217767,
+        "speed_kmh": 28.9,
+        "heading_deg": 154.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.604192,
+        "lng": 77.21958,
+        "speed_kmh": 37.0,
+        "heading_deg": 144.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6087,
+        "lng": 77.2004,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t8-congestion",
+        "title": "Traffic Congestion",
+        "lat": 28.618,
+        "lng": 77.215,
+        "severity": "warning",
+        "description": "Heavy congestion detected near central circle",
+        "color": "#f59e0b"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 9.0,
+    "blue": [
+      {
+        "lat": 28.628166,
+        "lng": 77.21518
+      },
+      {
+        "lat": 28.60587,
+        "lng": 77.21745
+      },
+      {
+        "lat": 28.6093,
+        "lng": 77.2012
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.618,
+        "lng": 77.215
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.628166,
+        "lng": 77.21518,
+        "speed_kmh": 27.2,
+        "heading_deg": 162.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.60587,
+        "lng": 77.21745,
+        "speed_kmh": 37.5,
+        "heading_deg": 152.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6093,
+        "lng": 77.2012,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t9-congestion",
+        "title": "Traffic Congestion",
+        "lat": 28.618,
+        "lng": 77.215,
+        "severity": "warning",
+        "description": "Heavy congestion detected near central circle",
+        "color": "#f59e0b"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 10.0,
+    "blue": [
+      {
+        "lat": 28.628672,
+        "lng": 77.212473
+      },
+      {
+        "lat": 28.6079,
+        "lng": 77.215156
+      },
+      {
+        "lat": 28.6099,
+        "lng": 77.202
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.618,
+        "lng": 77.215
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.628672,
+        "lng": 77.212473,
+        "speed_kmh": 27.3,
+        "heading_deg": 170.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.6079,
+        "lng": 77.215156,
+        "speed_kmh": 38.7,
+        "heading_deg": 160.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6099,
+        "lng": 77.202,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t10-congestion",
+        "title": "Traffic Congestion",
+        "lat": 28.618,
+        "lng": 77.215,
+        "severity": "warning",
+        "description": "Heavy congestion detected near central circle",
+        "color": "#f59e0b"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 11.0,
+    "blue": [
+      {
+        "lat": 28.628891,
+        "lng": 77.209698
+      },
+      {
+        "lat": 28.610192,
+        "lng": 77.212742
+      },
+      {
+        "lat": 28.6105,
+        "lng": 77.2028
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.618,
+        "lng": 77.215
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.628891,
+        "lng": 77.209698,
+        "speed_kmh": 29.4,
+        "heading_deg": 178.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.610192,
+        "lng": 77.212742,
+        "speed_kmh": 40.5,
+        "heading_deg": 168.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6105,
+        "lng": 77.2028,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t11-congestion",
+        "title": "Traffic Congestion",
+        "lat": 28.618,
+        "lng": 77.215,
+        "severity": "warning",
+        "description": "Heavy congestion detected near central circle",
+        "color": "#f59e0b"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 12.0,
+    "blue": [
+      {
+        "lat": 28.628818,
+        "lng": 77.206909
+      },
+      {
+        "lat": 28.612646,
+        "lng": 77.210256
+      },
+      {
+        "lat": 28.6111,
+        "lng": 77.2036
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.618,
+        "lng": 77.215
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.628818,
+        "lng": 77.206909,
+        "speed_kmh": 32.8,
+        "heading_deg": 186.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.612646,
+        "lng": 77.210256,
+        "speed_kmh": 42.4,
+        "heading_deg": 176.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6111,
+        "lng": 77.2036,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t12-congestion",
+        "title": "Traffic Congestion",
+        "lat": 28.618,
+        "lng": 77.215,
+        "severity": "warning",
+        "description": "Heavy congestion detected near central circle",
+        "color": "#f59e0b"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 13.0,
+    "blue": [
+      {
+        "lat": 28.628454,
+        "lng": 77.204162
+      },
+      {
+        "lat": 28.615154,
+        "lng": 77.207744
+      },
+      {
+        "lat": 28.6117,
+        "lng": 77.2044
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.618,
+        "lng": 77.215
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.628454,
+        "lng": 77.204162,
+        "speed_kmh": 36.7,
+        "heading_deg": 194.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.615154,
+        "lng": 77.207744,
+        "speed_kmh": 44.3,
+        "heading_deg": 184.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6117,
+        "lng": 77.2044,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t13-congestion",
+        "title": "Traffic Congestion",
+        "lat": 28.618,
+        "lng": 77.215,
+        "severity": "warning",
+        "description": "Heavy congestion detected near central circle",
+        "color": "#f59e0b"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 14.0,
+    "blue": [
+      {
+        "lat": 28.627808,
+        "lng": 77.201508
+      },
+      {
+        "lat": 28.617608,
+        "lng": 77.205258
+      },
+      {
+        "lat": 28.6123,
+        "lng": 77.2052
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.618,
+        "lng": 77.215
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.627808,
+        "lng": 77.201508,
+        "speed_kmh": 40.3,
+        "heading_deg": 202.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.617608,
+        "lng": 77.205258,
+        "speed_kmh": 45.9,
+        "heading_deg": 192.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6123,
+        "lng": 77.2052,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t14-congestion",
+        "title": "Traffic Congestion",
+        "lat": 28.618,
+        "lng": 77.215,
+        "severity": "warning",
+        "description": "Heavy congestion detected near central circle",
+        "color": "#f59e0b"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 15.0,
+    "blue": [
+      {
+        "lat": 28.62689,
+        "lng": 77.199
+      },
+      {
+        "lat": 28.6199,
+        "lng": 77.202844
+      },
+      {
+        "lat": 28.6129,
+        "lng": 77.206
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.62689,
+        "lng": 77.199,
+        "speed_kmh": 42.5,
+        "heading_deg": 210.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.6199,
+        "lng": 77.202844,
+        "speed_kmh": 46.8,
+        "heading_deg": 200.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6129,
+        "lng": 77.206,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 16.0,
+    "blue": [
+      {
+        "lat": 28.62572,
+        "lng": 77.196687
+      },
+      {
+        "lat": 28.62193,
+        "lng": 77.20055
+      },
+      {
+        "lat": 28.6135,
+        "lng": 77.2068
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.62572,
+        "lng": 77.196687,
+        "speed_kmh": 42.9,
+        "heading_deg": 218.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.62193,
+        "lng": 77.20055,
+        "speed_kmh": 47.0,
+        "heading_deg": 208.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6135,
+        "lng": 77.2068,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 17.0,
+    "blue": [
+      {
+        "lat": 28.62432,
+        "lng": 77.194613
+      },
+      {
+        "lat": 28.623608,
+        "lng": 77.19842
+      },
+      {
+        "lat": 28.6141,
+        "lng": 77.2076
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.62432,
+        "lng": 77.194613,
+        "speed_kmh": 41.4,
+        "heading_deg": 226.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.623608,
+        "lng": 77.19842,
+        "speed_kmh": 46.3,
+        "heading_deg": 216.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6141,
+        "lng": 77.2076,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 18.0,
+    "blue": [
+      {
+        "lat": 28.622717,
+        "lng": 77.19282
+      },
+      {
+        "lat": 28.624863,
+        "lng": 77.196496
+      },
+      {
+        "lat": 28.6147,
+        "lng": 77.2084
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.622717,
+        "lng": 77.19282,
+        "speed_kmh": 38.3,
+        "heading_deg": 234.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.624863,
+        "lng": 77.196496,
+        "speed_kmh": 45.0,
+        "heading_deg": 224.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6147,
+        "lng": 77.2084,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 19.0,
+    "blue": [
+      {
+        "lat": 28.620942,
+        "lng": 77.191341
+      },
+      {
+        "lat": 28.625638,
+        "lng": 77.194816
+      },
+      {
+        "lat": 28.6153,
+        "lng": 77.2092
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.620942,
+        "lng": 77.191341,
+        "speed_kmh": 34.4,
+        "heading_deg": 242.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.625638,
+        "lng": 77.194816,
+        "speed_kmh": 43.3,
+        "heading_deg": 232.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6153,
+        "lng": 77.2092,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 20.0,
+    "blue": [
+      {
+        "lat": 28.61903,
+        "lng": 77.190206
+      },
+      {
+        "lat": 28.6259,
+        "lng": 77.193412
+      },
+      {
+        "lat": 28.6159,
+        "lng": 77.21
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.61903,
+        "lng": 77.190206,
+        "speed_kmh": 30.6,
+        "heading_deg": 250.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.6259,
+        "lng": 77.193412,
+        "speed_kmh": 41.3,
+        "heading_deg": 240.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6159,
+        "lng": 77.21,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 21.0,
+    "blue": [
+      {
+        "lat": 28.617019,
+        "lng": 77.189437
+      },
+      {
+        "lat": 28.625638,
+        "lng": 77.192311
+      },
+      {
+        "lat": 28.6165,
+        "lng": 77.2108
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.617019,
+        "lng": 77.189437,
+        "speed_kmh": 28.0,
+        "heading_deg": 258.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.625638,
+        "lng": 77.192311,
+        "speed_kmh": 39.4,
+        "heading_deg": 248.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6165,
+        "lng": 77.2108,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 22.0,
+    "blue": [
+      {
+        "lat": 28.614946,
+        "lng": 77.189049
+      },
+      {
+        "lat": 28.624863,
+        "lng": 77.191535
+      },
+      {
+        "lat": 28.6171,
+        "lng": 77.2116
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.614946,
+        "lng": 77.189049,
+        "speed_kmh": 27.0,
+        "heading_deg": 266.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.624863,
+        "lng": 77.191535,
+        "speed_kmh": 37.9,
+        "heading_deg": 256.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6171,
+        "lng": 77.2116,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 23.0,
+    "blue": [
+      {
+        "lat": 28.612854,
+        "lng": 77.189049
+      },
+      {
+        "lat": 28.623608,
+        "lng": 77.191099
+      },
+      {
+        "lat": 28.6177,
+        "lng": 77.2124
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.612854,
+        "lng": 77.189049,
+        "speed_kmh": 28.0,
+        "heading_deg": 274.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.623608,
+        "lng": 77.191099,
+        "speed_kmh": 37.1,
+        "heading_deg": 264.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6177,
+        "lng": 77.2124,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 24.0,
+    "blue": [
+      {
+        "lat": 28.610781,
+        "lng": 77.189437
+      },
+      {
+        "lat": 28.62193,
+        "lng": 77.191011
+      },
+      {
+        "lat": 28.6183,
+        "lng": 77.2132
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.610781,
+        "lng": 77.189437,
+        "speed_kmh": 30.7,
+        "heading_deg": 282.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.62193,
+        "lng": 77.191011,
+        "speed_kmh": 37.1,
+        "heading_deg": 272.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6183,
+        "lng": 77.2132,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 25.0,
+    "blue": [
+      {
+        "lat": 28.60877,
+        "lng": 77.190206
+      },
+      {
+        "lat": 28.6199,
+        "lng": 77.191273
+      },
+      {
+        "lat": 28.6189,
+        "lng": 77.214
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.608,
+        "lng": 77.225
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.60877,
+        "lng": 77.190206,
+        "speed_kmh": 34.5,
+        "heading_deg": 290.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.6199,
+        "lng": 77.191273,
+        "speed_kmh": 37.8,
+        "heading_deg": 280.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6189,
+        "lng": 77.214,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t25-hazard",
+        "title": "Road Obstruction",
+        "lat": 28.608,
+        "lng": 77.225,
+        "severity": "danger",
+        "description": "Lane closure due to maintenance crew",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 26.0,
+    "blue": [
+      {
+        "lat": 28.606858,
+        "lng": 77.191341
+      },
+      {
+        "lat": 28.617608,
+        "lng": 77.191881
+      },
+      {
+        "lat": 28.6195,
+        "lng": 77.2148
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.608,
+        "lng": 77.225
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.606858,
+        "lng": 77.191341,
+        "speed_kmh": 38.4,
+        "heading_deg": 298.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.617608,
+        "lng": 77.191881,
+        "speed_kmh": 39.2,
+        "heading_deg": 288.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6195,
+        "lng": 77.2148,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t26-hazard",
+        "title": "Road Obstruction",
+        "lat": 28.608,
+        "lng": 77.225,
+        "severity": "danger",
+        "description": "Lane closure due to maintenance crew",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 27.0,
+    "blue": [
+      {
+        "lat": 28.605083,
+        "lng": 77.19282
+      },
+      {
+        "lat": 28.615154,
+        "lng": 77.192822
+      },
+      {
+        "lat": 28.6201,
+        "lng": 77.2156
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.608,
+        "lng": 77.225
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.605083,
+        "lng": 77.19282,
+        "speed_kmh": 41.4,
+        "heading_deg": 306.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.615154,
+        "lng": 77.192822,
+        "speed_kmh": 41.0,
+        "heading_deg": 296.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6201,
+        "lng": 77.2156,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t27-hazard",
+        "title": "Road Obstruction",
+        "lat": 28.608,
+        "lng": 77.225,
+        "severity": "danger",
+        "description": "Lane closure due to maintenance crew",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 28.0,
+    "blue": [
+      {
+        "lat": 28.60348,
+        "lng": 77.194613
+      },
+      {
+        "lat": 28.612646,
+        "lng": 77.194077
+      },
+      {
+        "lat": 28.6207,
+        "lng": 77.2164
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.608,
+        "lng": 77.225
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.60348,
+        "lng": 77.194613,
+        "speed_kmh": 42.9,
+        "heading_deg": 314.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.612646,
+        "lng": 77.194077,
+        "speed_kmh": 43.0,
+        "heading_deg": 304.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6207,
+        "lng": 77.2164,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t28-hazard",
+        "title": "Road Obstruction",
+        "lat": 28.608,
+        "lng": 77.225,
+        "severity": "danger",
+        "description": "Lane closure due to maintenance crew",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 29.0,
+    "blue": [
+      {
+        "lat": 28.60208,
+        "lng": 77.196687
+      },
+      {
+        "lat": 28.610192,
+        "lng": 77.195623
+      },
+      {
+        "lat": 28.6213,
+        "lng": 77.2172
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.608,
+        "lng": 77.225
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.60208,
+        "lng": 77.196687,
+        "speed_kmh": 42.5,
+        "heading_deg": 322.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.610192,
+        "lng": 77.195623,
+        "speed_kmh": 44.8,
+        "heading_deg": 312.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6213,
+        "lng": 77.2172,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t29-hazard",
+        "title": "Road Obstruction",
+        "lat": 28.608,
+        "lng": 77.225,
+        "severity": "danger",
+        "description": "Lane closure due to maintenance crew",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 30.0,
+    "blue": [
+      {
+        "lat": 28.60091,
+        "lng": 77.199
+      },
+      {
+        "lat": 28.6079,
+        "lng": 77.19743
+      },
+      {
+        "lat": 28.6219,
+        "lng": 77.218
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.608,
+        "lng": 77.225
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.60091,
+        "lng": 77.199,
+        "speed_kmh": 40.2,
+        "heading_deg": 330.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.6079,
+        "lng": 77.19743,
+        "speed_kmh": 46.2,
+        "heading_deg": 320.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6219,
+        "lng": 77.218,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t30-hazard",
+        "title": "Road Obstruction",
+        "lat": 28.608,
+        "lng": 77.225,
+        "severity": "danger",
+        "description": "Lane closure due to maintenance crew",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 31.0,
+    "blue": [
+      {
+        "lat": 28.599992,
+        "lng": 77.201508
+      },
+      {
+        "lat": 28.60587,
+        "lng": 77.199461
+      },
+      {
+        "lat": 28.6225,
+        "lng": 77.2188
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.608,
+        "lng": 77.225
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.599992,
+        "lng": 77.201508,
+        "speed_kmh": 36.7,
+        "heading_deg": 338.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.60587,
+        "lng": 77.199461,
+        "speed_kmh": 46.9,
+        "heading_deg": 328.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6225,
+        "lng": 77.2188,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t31-hazard",
+        "title": "Road Obstruction",
+        "lat": 28.608,
+        "lng": 77.225,
+        "severity": "danger",
+        "description": "Lane closure due to maintenance crew",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 32.0,
+    "blue": [
+      {
+        "lat": 28.599346,
+        "lng": 77.204162
+      },
+      {
+        "lat": 28.604192,
+        "lng": 77.201679
+      },
+      {
+        "lat": 28.6231,
+        "lng": 77.2196
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.608,
+        "lng": 77.225
+      }
+    ],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.599346,
+        "lng": 77.204162,
+        "speed_kmh": 32.7,
+        "heading_deg": 346.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.604192,
+        "lng": 77.201679,
+        "speed_kmh": 46.9,
+        "heading_deg": 336.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6231,
+        "lng": 77.2196,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t32-hazard",
+        "title": "Road Obstruction",
+        "lat": 28.608,
+        "lng": 77.225,
+        "severity": "danger",
+        "description": "Lane closure due to maintenance crew",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 33.0,
+    "blue": [
+      {
+        "lat": 28.598982,
+        "lng": 77.206909
+      },
+      {
+        "lat": 28.602937,
+        "lng": 77.204039
+      },
+      {
+        "lat": 28.6237,
+        "lng": 77.2204
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.598982,
+        "lng": 77.206909,
+        "speed_kmh": 29.3,
+        "heading_deg": 354.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.602937,
+        "lng": 77.204039,
+        "speed_kmh": 46.0,
+        "heading_deg": 344.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6237,
+        "lng": 77.2204,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 34.0,
+    "blue": [
+      {
+        "lat": 28.598909,
+        "lng": 77.209698
+      },
+      {
+        "lat": 28.602162,
+        "lng": 77.206495
+      },
+      {
+        "lat": 28.6243,
+        "lng": 77.2212
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.598909,
+        "lng": 77.209698,
+        "speed_kmh": 27.3,
+        "heading_deg": 2.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.602162,
+        "lng": 77.206495,
+        "speed_kmh": 44.6,
+        "heading_deg": 352.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6243,
+        "lng": 77.2212,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 35.0,
+    "blue": [
+      {
+        "lat": 28.599128,
+        "lng": 77.212473
+      },
+      {
+        "lat": 28.6019,
+        "lng": 77.209
+      },
+      {
+        "lat": 28.6249,
+        "lng": 77.222
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.599128,
+        "lng": 77.212473,
+        "speed_kmh": 27.2,
+        "heading_deg": 10.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.6019,
+        "lng": 77.209,
+        "speed_kmh": 42.7,
+        "heading_deg": 0.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6249,
+        "lng": 77.222,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 36.0,
+    "blue": [
+      {
+        "lat": 28.599634,
+        "lng": 77.21518
+      },
+      {
+        "lat": 28.602162,
+        "lng": 77.211505
+      },
+      {
+        "lat": 28.6255,
+        "lng": 77.2228
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.599634,
+        "lng": 77.21518,
+        "speed_kmh": 29.0,
+        "heading_deg": 18.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.602162,
+        "lng": 77.211505,
+        "speed_kmh": 40.7,
+        "heading_deg": 8.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6255,
+        "lng": 77.2228,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 37.0,
+    "blue": [
+      {
+        "lat": 28.600418,
+        "lng": 77.217767
+      },
+      {
+        "lat": 28.602937,
+        "lng": 77.213961
+      },
+      {
+        "lat": 28.6261,
+        "lng": 77.2236
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.600418,
+        "lng": 77.217767,
+        "speed_kmh": 32.3,
+        "heading_deg": 26.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.602937,
+        "lng": 77.213961,
+        "speed_kmh": 38.9,
+        "heading_deg": 16.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6261,
+        "lng": 77.2236,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 38.0,
+    "blue": [
+      {
+        "lat": 28.601464,
+        "lng": 77.220184
+      },
+      {
+        "lat": 28.604192,
+        "lng": 77.216321
+      },
+      {
+        "lat": 28.6267,
+        "lng": 77.2244
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.601464,
+        "lng": 77.220184,
+        "speed_kmh": 36.2,
+        "heading_deg": 34.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.604192,
+        "lng": 77.216321,
+        "speed_kmh": 37.6,
+        "heading_deg": 24.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6267,
+        "lng": 77.2244,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 39.0,
+    "blue": [
+      {
+        "lat": 28.602753,
+        "lng": 77.222383
+      },
+      {
+        "lat": 28.60587,
+        "lng": 77.218539
+      },
+      {
+        "lat": 28.6273,
+        "lng": 77.2252
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.602753,
+        "lng": 77.222383,
+        "speed_kmh": 39.8,
+        "heading_deg": 42.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.60587,
+        "lng": 77.218539,
+        "speed_kmh": 37.0,
+        "heading_deg": 32.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6273,
+        "lng": 77.2252,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 40.0,
+    "blue": [
+      {
+        "lat": 28.604258,
+        "lng": 77.224321
+      },
+      {
+        "lat": 28.6079,
+        "lng": 77.22057
+      },
+      {
+        "lat": 28.6279,
+        "lng": 77.226
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.604258,
+        "lng": 77.224321,
+        "speed_kmh": 42.3,
+        "heading_deg": 50.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.6079,
+        "lng": 77.22057,
+        "speed_kmh": 37.2,
+        "heading_deg": 40.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6279,
+        "lng": 77.226,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 41.0,
+    "blue": [
+      {
+        "lat": 28.605951,
+        "lng": 77.225961
+      },
+      {
+        "lat": 28.610192,
+        "lng": 77.222377
+      },
+      {
+        "lat": 28.6285,
+        "lng": 77.2268
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.605951,
+        "lng": 77.225961,
+        "speed_kmh": 43.0,
+        "heading_deg": 58.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.610192,
+        "lng": 77.222377,
+        "speed_kmh": 38.2,
+        "heading_deg": 48.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6285,
+        "lng": 77.2268,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 42.0,
+    "blue": [
+      {
+        "lat": 28.607799,
+        "lng": 77.227271
+      },
+      {
+        "lat": 28.612646,
+        "lng": 77.223923
+      },
+      {
+        "lat": 28.6291,
+        "lng": 77.2276
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.607799,
+        "lng": 77.227271,
+        "speed_kmh": 41.7,
+        "heading_deg": 66.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.612646,
+        "lng": 77.223923,
+        "speed_kmh": 39.7,
+        "heading_deg": 56.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6291,
+        "lng": 77.2276,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 43.0,
+    "blue": [
+      {
+        "lat": 28.609765,
+        "lng": 77.228225
+      },
+      {
+        "lat": 28.615154,
+        "lng": 77.225178
+      },
+      {
+        "lat": 28.6297,
+        "lng": 77.2284
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.609765,
+        "lng": 77.228225,
+        "speed_kmh": 38.8,
+        "heading_deg": 74.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.615154,
+        "lng": 77.225178,
+        "speed_kmh": 41.6,
+        "heading_deg": 64.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6297,
+        "lng": 77.2284,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 44.0,
+    "blue": [
+      {
+        "lat": 28.611812,
+        "lng": 77.228805
+      },
+      {
+        "lat": 28.617608,
+        "lng": 77.226119
+      },
+      {
+        "lat": 28.6303,
+        "lng": 77.2292
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "courier-1",
+        "name": "Fleet Unit 101",
+        "lat": 28.611812,
+        "lng": 77.228805,
+        "speed_kmh": 34.9,
+        "heading_deg": 82.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      },
+      {
+        "id": "courier-2",
+        "name": "Fleet Unit 102",
+        "lat": 28.617608,
+        "lng": 77.226119,
+        "speed_kmh": 43.6,
+        "heading_deg": 72.0,
+        "altitude_m": 0.0,
+        "color": "#a855f7"
+      },
+      {
+        "id": "patrol-3",
+        "name": "Patrol Cruiser 07",
+        "lat": 28.6303,
+        "lng": 77.2292,
+        "speed_kmh": 48.0,
+        "heading_deg": 55.0,
+        "altitude_m": 0.0,
+        "color": "#10b981"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  }
+]

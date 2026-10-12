@@ -1,0 +1,1001 @@
+[
+  {
+    "time": 0.0,
+    "blue": [
+      {
+        "lat": 28.605,
+        "lng": 77.215
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.605,
+        "lng": 77.215,
+        "speed_kmh": 75.0,
+        "heading_deg": 45.0,
+        "altitude_m": 80.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 1.0,
+    "blue": [
+      {
+        "lat": 28.606143,
+        "lng": 77.217678
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.606143,
+        "lng": 77.217678,
+        "speed_kmh": 74.6,
+        "heading_deg": 44.7,
+        "altitude_m": 84.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 2.0,
+    "blue": [
+      {
+        "lat": 28.607286,
+        "lng": 77.220271
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.607286,
+        "lng": 77.220271,
+        "speed_kmh": 73.6,
+        "heading_deg": 43.7,
+        "altitude_m": 88.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 3.0,
+    "blue": [
+      {
+        "lat": 28.608429,
+        "lng": 77.222693
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.608429,
+        "lng": 77.222693,
+        "speed_kmh": 71.9,
+        "heading_deg": 42.2,
+        "altitude_m": 92.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 4.0,
+    "blue": [
+      {
+        "lat": 28.609571,
+        "lng": 77.224869
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.609571,
+        "lng": 77.224869,
+        "speed_kmh": 69.7,
+        "heading_deg": 40.1,
+        "altitude_m": 95.8,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 5.0,
+    "blue": [
+      {
+        "lat": 28.610714,
+        "lng": 77.226727
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.610714,
+        "lng": 77.226727,
+        "speed_kmh": 67.2,
+        "heading_deg": 37.5,
+        "altitude_m": 99.5,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 6.0,
+    "blue": [
+      {
+        "lat": 28.611857,
+        "lng": 77.228209
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.611857,
+        "lng": 77.228209,
+        "speed_kmh": 64.6,
+        "heading_deg": 34.5,
+        "altitude_m": 103.1,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 7.0,
+    "blue": [
+      {
+        "lat": 28.613,
+        "lng": 77.229266
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.613,
+        "lng": 77.229266,
+        "speed_kmh": 61.9,
+        "heading_deg": 31.2,
+        "altitude_m": 106.5,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 8.0,
+    "blue": [
+      {
+        "lat": 28.614143,
+        "lng": 77.229864
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.614143,
+        "lng": 77.229864,
+        "speed_kmh": 59.5,
+        "heading_deg": 27.7,
+        "altitude_m": 109.6,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 9.0,
+    "blue": [
+      {
+        "lat": 28.615286,
+        "lng": 77.229985
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.615286,
+        "lng": 77.229985,
+        "speed_kmh": 57.5,
+        "heading_deg": 24.1,
+        "altitude_m": 112.5,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 10.0,
+    "blue": [
+      {
+        "lat": 28.616429,
+        "lng": 77.229624
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.616429,
+        "lng": 77.229624,
+        "speed_kmh": 56.0,
+        "heading_deg": 20.5,
+        "altitude_m": 115.2,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 11.0,
+    "blue": [
+      {
+        "lat": 28.617571,
+        "lng": 77.228793
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.617571,
+        "lng": 77.228793,
+        "speed_kmh": 55.2,
+        "heading_deg": 17.1,
+        "altitude_m": 117.6,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 12.0,
+    "blue": [
+      {
+        "lat": 28.618714,
+        "lng": 77.227519
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.628,
+        "lng": 77.224
+      }
+    ],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.618714,
+        "lng": 77.227519,
+        "speed_kmh": 55.0,
+        "heading_deg": 14.0,
+        "altitude_m": 119.6,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "drone-geofence-12",
+        "title": "Restricted Airspace Proximity",
+        "lat": 28.628,
+        "lng": 77.224,
+        "severity": "danger",
+        "description": "Flight path within 500m of helipad no-fly zone",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 13.0,
+    "blue": [
+      {
+        "lat": 28.619857,
+        "lng": 77.225842
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.628,
+        "lng": 77.224
+      }
+    ],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.619857,
+        "lng": 77.225842,
+        "speed_kmh": 55.6,
+        "heading_deg": 11.2,
+        "altitude_m": 121.4,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "drone-geofence-13",
+        "title": "Restricted Airspace Proximity",
+        "lat": 28.628,
+        "lng": 77.224,
+        "severity": "danger",
+        "description": "Flight path within 500m of helipad no-fly zone",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 14.0,
+    "blue": [
+      {
+        "lat": 28.621,
+        "lng": 77.223817
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.628,
+        "lng": 77.224
+      }
+    ],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.621,
+        "lng": 77.223817,
+        "speed_kmh": 56.9,
+        "heading_deg": 8.8,
+        "altitude_m": 122.8,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "drone-geofence-14",
+        "title": "Restricted Airspace Proximity",
+        "lat": 28.628,
+        "lng": 77.224,
+        "severity": "danger",
+        "description": "Flight path within 500m of helipad no-fly zone",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 15.0,
+    "blue": [
+      {
+        "lat": 28.622143,
+        "lng": 77.221508
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.628,
+        "lng": 77.224
+      }
+    ],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.622143,
+        "lng": 77.221508,
+        "speed_kmh": 58.8,
+        "heading_deg": 7.0,
+        "altitude_m": 123.9,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "drone-geofence-15",
+        "title": "Restricted Airspace Proximity",
+        "lat": 28.628,
+        "lng": 77.224,
+        "severity": "danger",
+        "description": "Flight path within 500m of helipad no-fly zone",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 16.0,
+    "blue": [
+      {
+        "lat": 28.623286,
+        "lng": 77.218991
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.628,
+        "lng": 77.224
+      }
+    ],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.623286,
+        "lng": 77.218991,
+        "speed_kmh": 61.1,
+        "heading_deg": 5.7,
+        "altitude_m": 124.6,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "drone-geofence-16",
+        "title": "Restricted Airspace Proximity",
+        "lat": 28.628,
+        "lng": 77.224,
+        "severity": "danger",
+        "description": "Flight path within 500m of helipad no-fly zone",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 17.0,
+    "blue": [
+      {
+        "lat": 28.624429,
+        "lng": 77.216345
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.628,
+        "lng": 77.224
+      }
+    ],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.624429,
+        "lng": 77.216345,
+        "speed_kmh": 63.7,
+        "heading_deg": 5.1,
+        "altitude_m": 125.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "drone-geofence-17",
+        "title": "Restricted Airspace Proximity",
+        "lat": 28.628,
+        "lng": 77.224,
+        "severity": "danger",
+        "description": "Flight path within 500m of helipad no-fly zone",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 18.0,
+    "blue": [
+      {
+        "lat": 28.625571,
+        "lng": 77.213655
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.628,
+        "lng": 77.224
+      }
+    ],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.625571,
+        "lng": 77.213655,
+        "speed_kmh": 66.3,
+        "heading_deg": 5.1,
+        "altitude_m": 125.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "drone-geofence-18",
+        "title": "Restricted Airspace Proximity",
+        "lat": 28.628,
+        "lng": 77.224,
+        "severity": "danger",
+        "description": "Flight path within 500m of helipad no-fly zone",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 19.0,
+    "blue": [
+      {
+        "lat": 28.626714,
+        "lng": 77.211009
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.628,
+        "lng": 77.224
+      }
+    ],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.626714,
+        "lng": 77.211009,
+        "speed_kmh": 68.9,
+        "heading_deg": 5.7,
+        "altitude_m": 124.6,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "drone-geofence-19",
+        "title": "Restricted Airspace Proximity",
+        "lat": 28.628,
+        "lng": 77.224,
+        "severity": "danger",
+        "description": "Flight path within 500m of helipad no-fly zone",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 20.0,
+    "blue": [
+      {
+        "lat": 28.627857,
+        "lng": 77.208492
+      }
+    ],
+    "yellow": [
+      {
+        "lat": 28.628,
+        "lng": 77.224
+      }
+    ],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.627857,
+        "lng": 77.208492,
+        "speed_kmh": 71.2,
+        "heading_deg": 7.0,
+        "altitude_m": 123.9,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "drone-geofence-20",
+        "title": "Restricted Airspace Proximity",
+        "lat": 28.628,
+        "lng": 77.224,
+        "severity": "danger",
+        "description": "Flight path within 500m of helipad no-fly zone",
+        "color": "#ef4444"
+      }
+    ],
+    "resolved": []
+  },
+  {
+    "time": 21.0,
+    "blue": [
+      {
+        "lat": 28.629,
+        "lng": 77.206183
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.629,
+        "lng": 77.206183,
+        "speed_kmh": 73.1,
+        "heading_deg": 8.8,
+        "altitude_m": 122.8,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 22.0,
+    "blue": [
+      {
+        "lat": 28.630143,
+        "lng": 77.204158
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.630143,
+        "lng": 77.204158,
+        "speed_kmh": 74.4,
+        "heading_deg": 11.2,
+        "altitude_m": 121.4,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 23.0,
+    "blue": [
+      {
+        "lat": 28.631286,
+        "lng": 77.202481
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.631286,
+        "lng": 77.202481,
+        "speed_kmh": 75.0,
+        "heading_deg": 14.0,
+        "altitude_m": 119.6,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 24.0,
+    "blue": [
+      {
+        "lat": 28.632429,
+        "lng": 77.201207
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.632429,
+        "lng": 77.201207,
+        "speed_kmh": 74.8,
+        "heading_deg": 17.1,
+        "altitude_m": 117.6,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 25.0,
+    "blue": [
+      {
+        "lat": 28.633571,
+        "lng": 77.200376
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.633571,
+        "lng": 77.200376,
+        "speed_kmh": 74.0,
+        "heading_deg": 20.5,
+        "altitude_m": 115.2,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 26.0,
+    "blue": [
+      {
+        "lat": 28.634714,
+        "lng": 77.200015
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.634714,
+        "lng": 77.200015,
+        "speed_kmh": 72.5,
+        "heading_deg": 24.1,
+        "altitude_m": 112.5,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 27.0,
+    "blue": [
+      {
+        "lat": 28.635857,
+        "lng": 77.200136
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.635857,
+        "lng": 77.200136,
+        "speed_kmh": 70.5,
+        "heading_deg": 27.7,
+        "altitude_m": 109.6,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 28.0,
+    "blue": [
+      {
+        "lat": 28.637,
+        "lng": 77.200734
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.637,
+        "lng": 77.200734,
+        "speed_kmh": 68.1,
+        "heading_deg": 31.2,
+        "altitude_m": 106.5,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 29.0,
+    "blue": [
+      {
+        "lat": 28.638143,
+        "lng": 77.201791
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.638143,
+        "lng": 77.201791,
+        "speed_kmh": 65.4,
+        "heading_deg": 34.5,
+        "altitude_m": 103.1,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 30.0,
+    "blue": [
+      {
+        "lat": 28.639286,
+        "lng": 77.203273
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.639286,
+        "lng": 77.203273,
+        "speed_kmh": 62.8,
+        "heading_deg": 37.5,
+        "altitude_m": 99.5,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 31.0,
+    "blue": [
+      {
+        "lat": 28.640429,
+        "lng": 77.205131
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.640429,
+        "lng": 77.205131,
+        "speed_kmh": 60.3,
+        "heading_deg": 40.1,
+        "altitude_m": 95.8,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 32.0,
+    "blue": [
+      {
+        "lat": 28.641571,
+        "lng": 77.207307
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.641571,
+        "lng": 77.207307,
+        "speed_kmh": 58.1,
+        "heading_deg": 42.2,
+        "altitude_m": 92.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 33.0,
+    "blue": [
+      {
+        "lat": 28.642714,
+        "lng": 77.209729
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.642714,
+        "lng": 77.209729,
+        "speed_kmh": 56.4,
+        "heading_deg": 43.7,
+        "altitude_m": 88.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 34.0,
+    "blue": [
+      {
+        "lat": 28.643857,
+        "lng": 77.212322
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.643857,
+        "lng": 77.212322,
+        "speed_kmh": 55.4,
+        "heading_deg": 44.7,
+        "altitude_m": 84.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  },
+  {
+    "time": 35.0,
+    "blue": [
+      {
+        "lat": 28.645,
+        "lng": 77.215
+      }
+    ],
+    "yellow": [],
+    "entities": [
+      {
+        "id": "uav-falcon",
+        "name": "Surveillance Drone SkyFalcon",
+        "lat": 28.645,
+        "lng": 77.215,
+        "speed_kmh": 55.0,
+        "heading_deg": 45.0,
+        "altitude_m": 80.0,
+        "color": "#38bdf8"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
+  }
+]

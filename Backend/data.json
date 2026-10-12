@@ -7,17 +7,45 @@
         "lng": 77.21
       }
     ],
-    "yellow": []
+    "yellow": [],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.61,
+        "lng": 77.21,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
   },
   {
     "time": 1,
     "blue": [
       {
         "lat": 28.612,
-        "lng": 77.21199999999999
+        "lng": 77.212
       }
     ],
-    "yellow": []
+    "yellow": [],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.612,
+        "lng": 77.212,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
   },
   {
     "time": 2,
@@ -32,7 +60,31 @@
         "lat": 28.62,
         "lng": 77.22
       }
-    ]
+    ],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.614,
+        "lng": 77.214,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t2-1",
+        "title": "Sensor Anomaly Alpha",
+        "lat": 28.62,
+        "lng": 77.22,
+        "severity": "warning",
+        "description": "Roadside sensor proximity trigger detected",
+        "color": "#f59e0b"
+      }
+    ],
+    "resolved": []
   },
   {
     "time": 3,
@@ -47,17 +99,55 @@
         "lat": 28.63,
         "lng": 77.23
       }
-    ]
+    ],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.616,
+        "lng": 77.216,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "alert-t3-1",
+        "title": "Sensor Anomaly Beta",
+        "lat": 28.63,
+        "lng": 77.23,
+        "severity": "warning",
+        "description": "Secondary intersection sensor trigger",
+        "color": "#f59e0b"
+      }
+    ],
+    "resolved": []
   },
   {
     "time": 4,
     "blue": [
       {
         "lat": 28.618,
-        "lng": 77.21799999999999
+        "lng": 77.218
       }
     ],
-    "yellow": []
+    "yellow": [],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.618,
+        "lng": 77.218,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
   },
   {
     "time": 5,
@@ -67,7 +157,21 @@
         "lng": 77.22
       }
     ],
-    "yellow": []
+    "yellow": [],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.62,
+        "lng": 77.22,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
   },
   {
     "time": 6,
@@ -77,27 +181,69 @@
         "lng": 77.222
       }
     ],
-    "yellow": []
+    "yellow": [],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.622,
+        "lng": 77.222,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
   },
   {
     "time": 7,
     "blue": [
       {
         "lat": 28.624,
-        "lng": 77.22399999999999
+        "lng": 77.224
       }
     ],
-    "yellow": []
+    "yellow": [],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.624,
+        "lng": 77.224,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
   },
   {
     "time": 8,
     "blue": [
       {
-        "lat": 28.625999999999998,
+        "lat": 28.626,
         "lng": 77.226
       }
     ],
-    "yellow": []
+    "yellow": [],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.626,
+        "lng": 77.226,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
   },
   {
     "time": 9,
@@ -107,6 +253,20 @@
         "lng": 77.228
       }
     ],
-    "yellow": []
+    "yellow": [],
+    "entities": [
+      {
+        "id": "alpha-1",
+        "name": "Asset Alpha 1",
+        "lat": 28.628,
+        "lng": 77.228,
+        "speed_kmh": 25.0,
+        "heading_deg": 45.0,
+        "altitude_m": 0.0,
+        "color": "#00f0ff"
+      }
+    ],
+    "alerts": [],
+    "resolved": []
   }
 ]
