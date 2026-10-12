@@ -132,13 +132,14 @@ export default function TelemetryHUD({
           {/* Card Header (MacBook Frosted Glass Header) */}
           <div style={{
             padding: '12px 16px',
-            borderBottom: minimized ? 'none' : '1px solid var(--liquid-glass-subcard-border)',
+            borderBottom: (minimized || totalIncidents === 0) ? (minimized ? 'none' : '1px solid var(--liquid-glass-subcard-border)') : 'none',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
             background: 'var(--liquid-glass-header-bg)',
             backdropFilter: 'blur(16px)',
-            WebkitBackdropFilter: 'blur(16px)'
+            WebkitBackdropFilter: 'blur(16px)',
+            flexShrink: 0
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <div style={{
@@ -198,17 +199,16 @@ export default function TelemetryHUD({
             </div>
           </div>
 
-          {/* Scrollable Live Result Body (Hidden when Minimized) */}
-          {!minimized && (
+          {/* Sticky Top Important Metrics (Pinned on screen above scrollable body) */}
+          {!minimized && totalIncidents > 0 && (
             <div style={{
-              padding: '14px',
-              overflowY: 'auto',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '14px'
+              padding: '0 14px 12px 14px',
+              borderBottom: '1px solid var(--liquid-glass-subcard-border)',
+              background: 'var(--liquid-glass-header-bg)',
+              backdropFilter: 'blur(16px)',
+              WebkitBackdropFilter: 'blur(16px)',
+              flexShrink: 0
             }}>
-            {/* Clearance Progress Card (MacBook Subcard) */}
-            {totalIncidents > 0 && (
               <div 
                 className="liquid-glass-subcard" 
                 style={{
@@ -245,8 +245,20 @@ export default function TelemetryHUD({
                   <span>Total: {totalIncidents}</span>
                 </div>
               </div>
-            )}
+            </div>
+          )}
 
+          {/* Scrollable Live Result Body (Hidden when Minimized) */}
+          {!minimized && (
+            <div style={{
+              padding: '14px',
+              overflowY: 'auto',
+              flex: 1,
+              minHeight: 0,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '14px'
+            }}>
             {/* Active Alerts / Hazards List */}
             <div>
               <div style={{
