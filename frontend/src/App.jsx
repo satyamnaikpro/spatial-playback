@@ -11,6 +11,7 @@ export default function App() {
   const playback = usePlayback();
   const [isUploadOpen, setIsUploadOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [hudCollapsed, setHudCollapsed] = useState(false);
 
   // Theme state: 'light' by default on app opening
   const [theme, setTheme] = useState(() => {
@@ -177,6 +178,8 @@ export default function App() {
             currentTime={playback.currentTime}
             totalFrames={playback.totalFrames}
             onCameraAction={setCameraAction}
+            collapsed={hudCollapsed}
+            onToggleCollapse={setHudCollapsed}
           />
 
           {/* Floating Playback Controls Bar */}
@@ -194,6 +197,7 @@ export default function App() {
             loop={playback.loop}
             onToggleLoop={() => playback.setLoop(l => !l)}
             intervalMs={playback.metadata?.default_step_interval_ms || 1000}
+            hudOpen={!hudCollapsed}
           />
         </main>
       </div>

@@ -22,7 +22,8 @@ export default function PlaybackControls({
   onChangeSpeed,
   loop,
   onToggleLoop,
-  intervalMs = 1000
+  intervalMs = 1000,
+  hudOpen = false
 }) {
   const maxTime = Math.max(0, totalFrames - 1);
   const currentStep = Math.floor(currentTime);
@@ -31,31 +32,24 @@ export default function PlaybackControls({
   const totalSecs = ((maxTime * intervalMs) / 1000).toFixed(1);
 
   return (
-    <div style={{
-      position: 'absolute',
-      bottom: '20px',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: 'calc(100% - 48px)',
-      maxWidth: '920px',
-      zIndex: 1000,
-      pointerEvents: 'auto'
-    }}>
-      <div className="glass-panel" style={{
-        padding: '12px 20px',
-        borderRadius: '24px',
+    <div className={`playback-dock ${hudOpen ? 'hud-open' : ''}`}>
+      <div className="liquid-glass-panel" style={{
+        padding: '13px 22px',
+        borderRadius: '26px',
         display: 'flex',
         flexDirection: 'column',
         gap: '10px',
-        boxShadow: 'var(--shadow-panel)'
+        boxShadow: 'var(--liquid-glass-shadow)',
+        border: '1px solid var(--liquid-glass-border)'
       }}>
         {/* Scrubber Timeline Bar */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <span style={{
             fontSize: '11px',
-            fontWeight: 600,
+            fontWeight: 700,
             color: 'var(--text-muted)',
-            minWidth: '45px'
+            minWidth: '45px',
+            fontFamily: 'var(--font-mono)'
           }}>
             {elapsedSecs}s
           </span>
@@ -68,7 +62,8 @@ export default function PlaybackControls({
               width: `${progressPercent}%`,
               height: '6px',
               borderRadius: '3px',
-              background: 'var(--accent-cyan)',
+              background: 'linear-gradient(90deg, var(--accent-cyan) 0%, #34a853 100%)',
+              boxShadow: '0 0 10px rgba(26, 115, 232, 0.45)',
               pointerEvents: 'none',
               zIndex: 1
             }} />
@@ -87,16 +82,17 @@ export default function PlaybackControls({
 
           <span style={{
             fontSize: '11px',
-            fontWeight: 600,
+            fontWeight: 700,
             color: 'var(--text-dim)',
             minWidth: '45px',
-            textAlign: 'right'
+            textAlign: 'right',
+            fontFamily: 'var(--font-mono)'
           }}>
             {totalSecs}s
           </span>
         </div>
 
-        {/* Buttons & Indicators Row (Google Navigation Style) */}
+        {/* Buttons & Indicators Row (MacBook Dock / Control Center Style) */}
         <div style={{
           display: 'flex',
           alignItems: 'center',
@@ -106,35 +102,35 @@ export default function PlaybackControls({
         }}>
           {/* Left: Step Readout */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span className="telemetry-tag" style={{ borderRadius: '12px' }}>
+            <span className="telemetry-tag" style={{ borderRadius: '14px', padding: '4px 12px' }}>
               STEP: <b style={{ color: 'var(--accent-cyan)' }}>{currentStep}</b> / {maxTime}
             </span>
-            <span style={{ fontSize: '11px', color: 'var(--text-dim)', fontWeight: 500 }}>
+            <span style={{ fontSize: '11px', color: 'var(--text-dim)', fontWeight: 600 }}>
               ({progressPercent.toFixed(0)}%)
             </span>
           </div>
 
-          {/* Center: Playback Controls */}
+          {/* Center: Playback Controls (MacBook Glass Action Buttons) */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <button 
-              className="btn-glass" 
+              className="liquid-glass-btn" 
               onClick={onReset} 
-              style={{ width: '36px', height: '36px', padding: 0 }}
+              style={{ width: '36px', height: '36px', padding: 0, borderRadius: '50%' }}
               title="Reset to start"
             >
               <RotateCcw size={15} />
             </button>
 
             <button 
-              className="btn-glass" 
+              className="liquid-glass-btn" 
               onClick={onStepBackward} 
-              style={{ width: '36px', height: '36px', padding: 0 }}
+              style={{ width: '36px', height: '36px', padding: 0, borderRadius: '50%' }}
               title="Step Backward"
             >
               <SkipBack size={15} />
             </button>
 
-            {/* Google Primary Round Play Button */}
+            {/* Apple Glowing Disc Play Button */}
             <button 
               className="btn-primary-play" 
               onClick={onTogglePlay}
@@ -144,18 +140,18 @@ export default function PlaybackControls({
             </button>
 
             <button 
-              className="btn-glass" 
+              className="liquid-glass-btn" 
               onClick={onStepForward} 
-              style={{ width: '36px', height: '36px', padding: 0 }}
+              style={{ width: '36px', height: '36px', padding: 0, borderRadius: '50%' }}
               title="Step Forward"
             >
               <SkipForward size={15} />
             </button>
 
             <button 
-              className={`btn-glass ${loop ? 'active' : ''}`} 
+              className={`liquid-glass-btn ${loop ? 'active' : ''}`} 
               onClick={onToggleLoop} 
-              style={{ width: '36px', height: '36px', padding: 0 }}
+              style={{ width: '36px', height: '36px', padding: 0, borderRadius: '50%' }}
               title="Toggle Loop"
             >
               <Repeat size={15} />
@@ -174,9 +170,9 @@ export default function PlaybackControls({
                 <button
                   key={s}
                   onClick={() => onChangeSpeed(s)}
-                  className={`btn-glass ${speed === s ? 'active' : ''}`}
+                  className={`liquid-glass-btn ${speed === s ? 'active' : ''}`}
                   style={{
-                    padding: '3px 8px',
+                    padding: '3px 9px',
                     fontSize: '11px',
                     fontWeight: 600,
                     minWidth: '36px',
