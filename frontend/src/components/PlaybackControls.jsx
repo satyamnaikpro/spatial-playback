@@ -32,7 +32,7 @@ export default function PlaybackControls({
   const totalSecs = ((maxTime * intervalMs) / 1000).toFixed(1);
 
   return (
-    <div className={`playback-dock ${hudOpen ? 'hud-open' : ''}`}>
+    <div className="playback-dock">
       <div className="liquid-glass-panel" style={{
         padding: '13px 22px',
         borderRadius: '26px',
@@ -94,24 +94,23 @@ export default function PlaybackControls({
 
         {/* Buttons & Indicators Row (MacBook Dock / Control Center Style) */}
         <div style={{
-          display: 'flex',
+          display: 'grid',
+          gridTemplateColumns: '1fr auto 1fr',
           alignItems: 'center',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
           gap: '12px'
         }}>
           {/* Left: Step Readout */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span className="telemetry-tag" style={{ borderRadius: '14px', padding: '4px 12px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', justifySelf: 'start', minWidth: 0 }}>
+            <span className="telemetry-tag" style={{ borderRadius: '14px', padding: '4px 12px', whiteSpace: 'nowrap' }}>
               STEP: <b style={{ color: 'var(--accent-cyan)' }}>{currentStep}</b> / {maxTime}
             </span>
-            <span style={{ fontSize: '11px', color: 'var(--text-dim)', fontWeight: 600 }}>
+            <span style={{ fontSize: '11px', color: 'var(--text-dim)', fontWeight: 600, whiteSpace: 'nowrap' }}>
               ({progressPercent.toFixed(0)}%)
             </span>
           </div>
 
           {/* Center: Playback Controls (MacBook Glass Action Buttons) */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', justifySelf: 'center' }}>
             <button 
               className="liquid-glass-btn" 
               onClick={onReset} 
@@ -159,7 +158,7 @@ export default function PlaybackControls({
           </div>
 
           {/* Right: Speed Multiplier */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', justifySelf: 'end' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--text-muted)' }}>
               <Gauge size={13} />
               <span style={{ fontSize: '12px', fontWeight: 600 }}>Rate:</span>

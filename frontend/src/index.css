@@ -514,27 +514,17 @@ body, html, #root {
 }
 
 /* ==========================================================
-   RESPONSIVE PLAYBACK DOCK & NO-OVERLAP SPATIAL SYSTEM
+   PERMANENTLY CENTERED PLAYBACK DOCK
    ========================================================== */
 .playback-dock {
   position: absolute;
   bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 50% !important;
+  transform: translateX(-50%) !important;
   width: min(760px, calc(100% - 32px));
   max-width: 760px;
   z-index: 950;
   pointer-events: auto;
-  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1), max-width 0.3s ease;
-}
-
-/* On wide screens with right HUD open, shift center to active map area */
-@media (min-width: 1200px) {
-  .playback-dock.hud-open {
-    left: calc(50% - 140px);
-    width: min(720px, calc(100% - 410px));
-    max-width: 720px;
-  }
 }
 
 /* Leaflet Zoom Controls Styled as MacBook Liquid Glass in Top-Left */
