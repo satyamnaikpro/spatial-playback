@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import L from 'leaflet';
 import { 
   Activity, 
   AlertTriangle, 
@@ -40,13 +39,19 @@ export default function TelemetryHUD({
   const hudRef = useRef(null);
 
   useEffect(() => {
-    if (!hudRef.current) return;
-    try {
-      L.DomEvent.disableScrollPropagation(hudRef.current);
-      L.DomEvent.disableClickPropagation(hudRef.current);
-    } catch (e) {
-      // Safe fallback
-    }
+    const el = hudRef.current;
+    if (!el) return;
+    const stopProp = (e) => e.stopPropagation();
+    el.addEventListener('wheel', stopProp, { passive: false });
+    el.addEventListener('mousedown', stopProp);
+    el.addEventListener('touchstart', stopProp);
+    el.addEventListener('pointerdown', stopProp);
+    return () => {
+      el.removeEventListener('wheel', stopProp);
+      el.removeEventListener('mousedown', stopProp);
+      el.removeEventListener('touchstart', stopProp);
+      el.removeEventListener('pointerdown', stopProp);
+    };
   }, [collapsed]);
 
   const handleToggleCollapse = (val) => {
