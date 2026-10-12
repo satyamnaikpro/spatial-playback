@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import L from 'leaflet';
 import { 
   Activity, 
   AlertTriangle, 
@@ -36,6 +37,17 @@ export default function TelemetryHUD({
 
   const isControlled = externalCollapsed !== undefined;
   const collapsed = isControlled ? externalCollapsed : internalCollapsed;
+  const hudRef = useRef(null);
+
+  useEffect(() => {
+    if (!hudRef.current) return;
+    try {
+      L.DomEvent.disableScrollPropagation(hudRef.current);
+      L.DomEvent.disableClickPropagation(hudRef.current);
+    } catch (e) {
+      // Safe fallback
+    }
+  }, [collapsed]);
 
   const handleToggleCollapse = (val) => {
     if (onToggleCollapse) {
@@ -55,16 +67,25 @@ export default function TelemetryHUD({
   const totalIncidents = activeAlerts.length + resolvedPoints.length;
 
   return (
-    <div style={{
-      position: 'absolute',
-      top: '16px',
-      right: '16px',
-      zIndex: 960,
-      display: 'flex',
-      alignItems: 'flex-start',
-      pointerEvents: 'auto',
-      transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)'
-    }}>
+    <div 
+      ref={hudRef}
+      onWheel={(e) => e.stopPropagation()}
+      onMouseDown={(e) => e.stopPropagation()}
+      onTouchStart={(e) => e.stopPropagation()}
+      style={{
+        position: 'absolute',
+        top: '16px',
+        right: '16px',
+        bottom: collapsed ? 'auto' : '116px',
+        maxHeight: collapsed ? 'auto' : 'calc(100% - 132px)',
+        zIndex: 960,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        pointerEvents: 'none',
+        transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)'
+      }}
+    >
       {/* Collapsed Pill Button (MacBook Liquid Glass Floating Pill) */}
       {collapsed && (
         <button
@@ -79,7 +100,8 @@ export default function TelemetryHUD({
             cursor: 'pointer',
             border: '1px solid var(--liquid-glass-border)',
             color: 'var(--text-main)',
-            boxShadow: 'var(--liquid-glass-shadow)'
+            boxShadow: 'var(--liquid-glass-shadow)',
+            pointerEvents: 'auto'
           }}
           title="Open Live Results Card"
         >
@@ -122,7 +144,10 @@ export default function TelemetryHUD({
             overflow: 'hidden',
             display: 'flex',
             flexDirection: 'column',
-            maxHeight: minimized ? '50px' : 'calc(100% - 135px)',
+            maxHeight: minimized ? '50px' : '100%',
+            height: minimized ? '50px' : 'auto',
+            minHeight: 0,
+            pointerEvents: 'auto',
             boxShadow: 'var(--liquid-glass-shadow)',
             border: '1px solid var(--liquid-glass-border)',
             animation: 'fadeIn 0.2s ease-out',
@@ -250,15 +275,20 @@ export default function TelemetryHUD({
 
           {/* Scrollable Live Result Body (Hidden when Minimized) */}
           {!minimized && (
-            <div style={{
-              padding: '14px',
-              overflowY: 'auto',
-              flex: 1,
-              minHeight: 0,
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '14px'
-            }}>
+            <div 
+              onWheel={(e) => e.stopPropagation()}
+              className="custom-scrollbar"
+              style={{
+                padding: '14px',
+                overflowY: 'auto',
+                overscrollBehavior: 'contain',
+                flex: 1,
+                minHeight: 0,
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '14px'
+              }}
+            >
             {/* Active Alerts / Hazards List */}
             <div>
               <div style={{

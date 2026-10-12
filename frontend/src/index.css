@@ -167,6 +167,11 @@ body, html, #root {
   background: var(--text-dim);
 }
 
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-medium) transparent;
+}
+
 /* Standard Glass Panel (Header & Sidebar) */
 .glass-panel {
   background: var(--bg-panel);
