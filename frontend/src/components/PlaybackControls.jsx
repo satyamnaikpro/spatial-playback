@@ -33,7 +33,7 @@ export default function PlaybackControls({
   return (
     <div style={{
       position: 'absolute',
-      bottom: '24px',
+      bottom: '20px',
       left: '50%',
       transform: 'translateX(-50%)',
       width: 'calc(100% - 48px)',
@@ -42,19 +42,20 @@ export default function PlaybackControls({
       pointerEvents: 'auto'
     }}>
       <div className="glass-panel" style={{
-        padding: '14px 20px',
+        padding: '12px 20px',
+        borderRadius: '24px',
         display: 'flex',
         flexDirection: 'column',
         gap: '10px',
-        boxShadow: '0 12px 40px rgba(0, 0, 0, 0.65)'
+        boxShadow: 'var(--shadow-panel)'
       }}>
-        {/* Scrubber Timeline Bar with Gradient Progress */}
+        {/* Scrubber Timeline Bar */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <span style={{
-            fontFamily: 'var(--font-mono)',
             fontSize: '11px',
+            fontWeight: 600,
             color: 'var(--text-muted)',
-            minWidth: '50px'
+            minWidth: '45px'
           }}>
             {elapsedSecs}s
           </span>
@@ -67,8 +68,7 @@ export default function PlaybackControls({
               width: `${progressPercent}%`,
               height: '6px',
               borderRadius: '3px',
-              background: 'linear-gradient(90deg, #0284c7, #00f0ff)',
-              boxShadow: '0 0 10px rgba(0, 240, 255, 0.4)',
+              background: 'var(--accent-cyan)',
               pointerEvents: 'none',
               zIndex: 1
             }} />
@@ -86,17 +86,17 @@ export default function PlaybackControls({
           </div>
 
           <span style={{
-            fontFamily: 'var(--font-mono)',
             fontSize: '11px',
+            fontWeight: 600,
             color: 'var(--text-dim)',
-            minWidth: '50px',
+            minWidth: '45px',
             textAlign: 'right'
           }}>
             {totalSecs}s
           </span>
         </div>
 
-        {/* Buttons & Indicators Row */}
+        {/* Buttons & Indicators Row (Google Navigation Style) */}
         <div style={{
           display: 'flex',
           alignItems: 'center',
@@ -104,22 +104,23 @@ export default function PlaybackControls({
           flexWrap: 'wrap',
           gap: '12px'
         }}>
-          {/* Left: Frame Readout */}
+          {/* Left: Step Readout */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span className="telemetry-tag">
-              STEP: <b style={{ color: '#fff' }}>{currentStep}</b> / {maxTime}
+            <span className="telemetry-tag" style={{ borderRadius: '12px' }}>
+              STEP: <b style={{ color: 'var(--accent-cyan)' }}>{currentStep}</b> / {maxTime}
             </span>
-            <span style={{ fontSize: '11px', color: 'var(--text-dim)', fontFamily: 'var(--font-mono)' }}>
+            <span style={{ fontSize: '11px', color: 'var(--text-dim)', fontWeight: 500 }}>
               ({progressPercent.toFixed(0)}%)
             </span>
           </div>
 
           {/* Center: Playback Controls */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <button 
               className="btn-glass" 
               onClick={onReset} 
-              title="Reset to frame 0"
+              style={{ width: '36px', height: '36px', padding: 0 }}
+              title="Reset to start"
             >
               <RotateCcw size={15} />
             </button>
@@ -127,32 +128,35 @@ export default function PlaybackControls({
             <button 
               className="btn-glass" 
               onClick={onStepBackward} 
-              title="Step Backward 1 Frame"
+              style={{ width: '36px', height: '36px', padding: 0 }}
+              title="Step Backward"
             >
-              <SkipBack size={16} />
+              <SkipBack size={15} />
             </button>
 
-            {/* Primary Big Play Button */}
+            {/* Google Primary Round Play Button */}
             <button 
               className="btn-primary-play" 
               onClick={onTogglePlay}
               title={isPlaying ? "Pause (Space)" : "Play (Space)"}
             >
-              {isPlaying ? <Pause size={20} fill="#000" /> : <Play size={20} fill="#000" style={{ marginLeft: '2px' }} />}
+              {isPlaying ? <Pause size={18} fill="#ffffff" /> : <Play size={18} fill="#ffffff" style={{ marginLeft: '2px' }} />}
             </button>
 
             <button 
               className="btn-glass" 
               onClick={onStepForward} 
-              title="Step Forward 1 Frame"
+              style={{ width: '36px', height: '36px', padding: 0 }}
+              title="Step Forward"
             >
-              <SkipForward size={16} />
+              <SkipForward size={15} />
             </button>
 
             <button 
               className={`btn-glass ${loop ? 'active' : ''}`} 
               onClick={onToggleLoop} 
-              title="Toggle Loop Playback"
+              style={{ width: '36px', height: '36px', padding: 0 }}
+              title="Toggle Loop"
             >
               <Repeat size={15} />
             </button>
@@ -161,8 +165,8 @@ export default function PlaybackControls({
           {/* Right: Speed Multiplier */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--text-muted)' }}>
-              <Gauge size={14} />
-              <span style={{ fontSize: '12px' }}>Rate:</span>
+              <Gauge size={13} />
+              <span style={{ fontSize: '12px', fontWeight: 600 }}>Rate:</span>
             </div>
 
             <div style={{ display: 'flex', gap: '4px' }}>
@@ -172,10 +176,11 @@ export default function PlaybackControls({
                   onClick={() => onChangeSpeed(s)}
                   className={`btn-glass ${speed === s ? 'active' : ''}`}
                   style={{
-                    padding: '4px 8px',
+                    padding: '3px 8px',
                     fontSize: '11px',
-                    fontFamily: 'var(--font-mono)',
-                    minWidth: '38px'
+                    fontWeight: 600,
+                    minWidth: '36px',
+                    borderRadius: '12px'
                   }}
                 >
                   {s}x

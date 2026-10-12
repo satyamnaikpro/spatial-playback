@@ -1,22 +1,95 @@
-:root {
-  --bg-dark: #070a13;
-  --bg-panel: rgba(13, 20, 36, 0.78);
-  --bg-panel-hover: rgba(20, 30, 52, 0.88);
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(0, 240, 255, 0.3);
-  --accent-cyan: #00f0ff;
-  --accent-cyan-glow: 0 0 18px rgba(0, 240, 255, 0.45);
-  --accent-emerald: #10b981;
-  --accent-amber: #f59e0b;
-  --accent-rose: #f43f5e;
-  --accent-violet: #a855f7;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
-  --font-sans: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+/* ==========================================================
+   SPATIAL PLAYBACK - GOOGLE MAPS THEME ENGINE (LIGHT & DARK)
+   ========================================================== */
+
+/* 1. Google Maps Light Theme (Default Daylight) */
+:root, [data-theme="light"] {
+  --bg-dark: #f8f9fa;
+  --bg-dark-secondary: #f1f3f4;
+  --bg-panel: #ffffff;
+  --bg-panel-hover: #f8f9fa;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f3f4;
+  --bg-input: #f1f3f4;
+
+  --border-subtle: #e8eaed;
+  --border-medium: #dadce0;
+  --border-glow: rgba(26, 115, 232, 0.3);
+
+  /* Google Maps Primary Colors */
+  --accent-cyan: #1a73e8;        /* Google Blue */
+  --accent-cyan-hover: #1557b0;
+  --accent-cyan-bg: #e8f0fe;     /* Google Blue chip background */
+  --accent-cyan-glow: 0 2px 10px rgba(26, 115, 232, 0.25);
+
+  --accent-emerald: #1e8e3e;     /* Google Green */
+  --accent-emerald-bg: #e6f4ea;
+  --accent-emerald-glow: 0 2px 10px rgba(30, 142, 62, 0.25);
+
+  --accent-amber: #ea8600;       /* Google Traffic Orange / Amber */
+  --accent-amber-bg: #fef7e0;
+
+  --accent-rose: #d93025;        /* Google Alert Red */
+  --accent-rose-bg: #fce8e6;
+
+  --accent-violet: #8430ce;      /* Google Violet */
+
+  --text-main: #202124;          /* Google High Emphasis */
+  --text-muted: #5f6368;         /* Google Medium Emphasis */
+  --text-dim: #80868b;           /* Google Low Emphasis */
+
+  --shadow-panel: 0 2px 6px rgba(60, 64, 67, 0.15), 0 1px 2px rgba(60, 64, 67, 0.2);
+  --shadow-card: 0 1px 3px rgba(60, 64, 67, 0.12), 0 1px 2px rgba(60, 64, 67, 0.24);
+  --shadow-popup: 0 4px 16px rgba(60, 64, 67, 0.2);
+  --map-bg: #e5e3df;             /* Google Maps Canvas Tan/Gray */
+
+  --font-sans: 'Google Sans', 'Roboto', 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
 }
 
+/* 2. Google Maps Dark Theme (Night Navigation) */
+[data-theme="dark"] {
+  --bg-dark: #121212;
+  --bg-dark-secondary: #1e1e1e;
+  --bg-panel: #202124;
+  --bg-panel-hover: #292a2d;
+  --bg-card: #282a2c;
+  --bg-card-hover: #35363a;
+  --bg-input: #202124;
+
+  --border-subtle: #3c4043;
+  --border-medium: #5f6368;
+  --border-glow: rgba(138, 180, 248, 0.35);
+
+  /* Google Dark Mode Colors */
+  --accent-cyan: #8ab4f8;        /* Google Dark Blue */
+  --accent-cyan-hover: #aecbfa;
+  --accent-cyan-bg: rgba(138, 180, 248, 0.15);
+  --accent-cyan-glow: 0 2px 12px rgba(138, 180, 248, 0.3);
+
+  --accent-emerald: #81c995;     /* Google Dark Green */
+  --accent-emerald-bg: rgba(129, 201, 149, 0.15);
+  --accent-emerald-glow: 0 2px 10px rgba(129, 201, 149, 0.25);
+
+  --accent-amber: #fdd663;       /* Google Dark Amber */
+  --accent-amber-bg: rgba(253, 214, 99, 0.15);
+
+  --accent-rose: #f28b82;        /* Google Dark Red */
+  --accent-rose-bg: rgba(242, 139, 130, 0.15);
+
+  --accent-violet: #c58af9;
+
+  --text-main: #e8eaed;
+  --text-muted: #9aa0a6;
+  --text-dim: #70757a;
+
+  --shadow-panel: 0 4px 16px rgba(0, 0, 0, 0.65);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-popup: 0 6px 24px rgba(0, 0, 0, 0.75);
+  --map-bg: #1f1f1f;
+}
+
+/* Base resets */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,79 +104,114 @@ body, html, #root {
   color: var(--text-main);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Custom Scrollbars */
+/* Custom Google-styled Scrollbars */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--border-medium);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 240, 255, 0.4);
+  background: var(--text-dim);
 }
 
-/* Glass panel utility */
+/* Google Maps Floating Card / Glass Panel */
 .glass-panel {
   background: var(--bg-panel);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border-subtle);
   border-radius: 12px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+  box-shadow: var(--shadow-panel);
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.glass-panel-glow {
-  background: var(--bg-panel);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-glow);
-  border-radius: 12px;
-  box-shadow: 0 0 24px rgba(0, 240, 255, 0.15);
-}
-
-/* Buttons */
+/* Google Pill and Action Buttons */
 .btn-glass {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 8px 14px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
+  gap: 7px;
+  padding: 7px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: 18px;
   color: var(--text-main);
   font-family: var(--font-sans);
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.15s ease;
   user-select: none;
 }
 .btn-glass:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-1px);
-}
-.btn-glass:active {
-  transform: translateY(0);
-}
-.btn-glass.active {
-  background: rgba(0, 240, 255, 0.15);
+  background: var(--bg-card-hover);
   border-color: var(--accent-cyan);
   color: var(--accent-cyan);
-  box-shadow: 0 0 12px rgba(0, 240, 255, 0.25);
+  box-shadow: 0 1px 4px rgba(60, 64, 67, 0.15);
+}
+.btn-glass:active {
+  transform: scale(0.98);
+}
+.btn-glass.active {
+  background: var(--accent-cyan-bg);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  font-weight: 600;
 }
 .btn-glass:disabled {
-  opacity: 0.4;
+  opacity: 0.45;
   cursor: not-allowed;
   transform: none;
+}
+
+/* Floating Action Button (FAB) */
+.btn-fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+  transition: all 0.2s ease;
+}
+.btn-fab:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  box-shadow: var(--shadow-panel);
+  transform: scale(1.04);
+}
+
+/* Theme Toggle Button */
+.btn-theme-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-theme-toggle:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-cyan);
+  transform: rotate(20deg) scale(1.05);
 }
 
 /* Primary Play Button */
@@ -111,35 +219,35 @@ body, html, #root {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #00f0ff 0%, #0284c7 100%);
+  background: var(--accent-cyan);
   border: none;
-  color: #000;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
-  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.4);
+  transition: all 0.15s ease;
 }
 .btn-primary-play:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 28px rgba(0, 240, 255, 0.7);
+  background: var(--accent-cyan-hover);
+  transform: scale(1.06);
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.5);
 }
 .btn-primary-play:active {
   transform: scale(0.96);
 }
 
-/* Scrub Range Input */
+/* Google Style Timeline Slider */
 .timeline-slider {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 6px;
   border-radius: 3px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--border-medium);
   outline: none;
   cursor: pointer;
-  position: relative;
 }
 .timeline-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -148,52 +256,85 @@ body, html, #root {
   height: 16px;
   border-radius: 50%;
   background: var(--accent-cyan);
-  box-shadow: 0 0 10px var(--accent-cyan);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   cursor: grab;
   transition: transform 0.1s ease;
 }
 .timeline-slider::-webkit-slider-thumb:hover {
-  transform: scale(1.3);
+  transform: scale(1.25);
 }
 .timeline-slider::-webkit-slider-thumb:active {
   cursor: grabbing;
-  transform: scale(1.4);
+  transform: scale(1.35);
 }
 
-/* Monospace telemetry pill */
+/* Google Maps Telemetry Chip Pill */
 .telemetry-tag {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 11px;
-  letter-spacing: 0.5px;
-  padding: 2px 6px;
-  border-radius: 4px;
-  background: rgba(0, 240, 255, 0.1);
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 14px;
+  background: var(--accent-cyan-bg);
   color: var(--accent-cyan);
-  border: 1px solid rgba(0, 240, 255, 0.2);
+  border: 1px solid var(--border-subtle);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 0.2px;
 }
 
-/* Leaflet map styles overrides */
+/* Material Switch Toggle */
+.google-switch {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background: var(--border-medium);
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.google-switch.active {
+  background: var(--accent-cyan);
+}
+.google-switch-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.google-switch.active .google-switch-thumb {
+  transform: translateX(16px);
+}
+
+/* Leaflet Container & Popup styling overrides */
 .leaflet-container {
-  background: #060911 !important;
+  background: var(--map-bg) !important;
   font-family: var(--font-sans) !important;
+  transition: background-color 0.2s ease;
 }
 .leaflet-popup-content-wrapper {
-  background: rgba(13, 20, 36, 0.92) !important;
-  backdrop-filter: blur(12px) !important;
+  background: var(--bg-panel) !important;
   border: 1px solid var(--border-subtle) !important;
-  border-radius: 8px !important;
+  border-radius: 12px !important;
   color: var(--text-main) !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6) !important;
+  box-shadow: var(--shadow-popup) !important;
 }
 .leaflet-popup-tip {
-  background: rgba(13, 20, 36, 0.92) !important;
+  background: var(--bg-panel) !important;
 }
 .leaflet-popup-content {
-  margin: 10px 14px !important;
+  margin: 12px 14px !important;
   line-height: 1.4 !important;
 }
 
-/* Animated Radar Pulse for Alerts */
+/* Animated Pulse Rings */
 @keyframes radar-pulse {
   0% {
     transform: scale(0.6);
@@ -209,10 +350,43 @@ body, html, #root {
   transform-origin: center;
 }
 
-/* Asset Marker Heading */
 .entity-marker-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.1s linear;
+}
+
+/* Sidebar item styling */
+.sidebar-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: all 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+}
+.sidebar-toggle-row:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-medium);
+}
+.sidebar-toggle-row.active {
+  border-color: var(--border-glow);
+  background: var(--accent-cyan-bg);
 }

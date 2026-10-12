@@ -1,14 +1,44 @@
 import React, { useState } from 'react';
-import { X, UploadCloud, FileText, CheckCircle2, AlertCircle } from 'lucide-react';
+import { 
+  X, 
+  UploadCloud, 
+  FileText, 
+  CheckCircle2, 
+  AlertCircle, 
+  Sparkles, 
+  Compass, 
+  Car, 
+  Radio, 
+  MapPin 
+} from 'lucide-react';
+import { DEMO_PRESETS } from '../hooks/usePlayback';
 
-export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
+export default function UploadModal({ isOpen, onClose, onRegisterScenario }) {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [jsonText, setJsonText] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
+  const [loadingDemoId, setLoadingDemoId] = useState(null);
 
   if (!isOpen) return null;
+
+  const handleSelectDemoPreset = async (preset) => {
+    setLoadingDemoId(preset.id);
+    setError(null);
+    try {
+      const res = await fetch(preset.file);
+      if (!res.ok) throw new Error(`Could not load preset file: ${preset.file}`);
+      const data = await res.json();
+      setName(preset.name);
+      setDescription(preset.description);
+      setJsonText(JSON.stringify(data, null, 2));
+    } catch (err) {
+      setError(`Failed to load preset: ${err.message}`);
+    } finally {
+      setLoadingDemoId(null);
+    }
+  };
 
   const handleFileChange = (e) => {
     const file = e.target.files?.[0];
@@ -41,23 +71,12 @@ export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
         throw new Error('Expected JSON array of frames: [{"time": 0, "blue": [...], "yellow": [...]}]');
       }
 
-      const res = await fetch('/api/scenarios/custom', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: name || 'Custom Scenario',
-          description: description || 'Uploaded trajectory data',
-          frames: parsed
-        })
-      });
+      await onRegisterScenario(
+        name || 'Custom Spatial Scenario',
+        description || 'User-provided trajectory dataset',
+        parsed
+      );
 
-      if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.detail || 'Failed to upload scenario');
-      }
-
-      const newScenario = await res.json();
-      onUploadSuccess(newScenario.id);
       onClose();
     } catch (err) {
       setError(err.message);
@@ -70,8 +89,8 @@ export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
     <div style={{
       position: 'fixed',
       inset: 0,
-      background: 'rgba(0, 0, 0, 0.75)',
-      backdropFilter: 'blur(8px)',
+      background: 'rgba(0, 0, 0, 0.78)',
+      backdropFilter: 'blur(10px)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -80,19 +99,21 @@ export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
     }}>
       <div className="glass-panel" style={{
         width: '100%',
-        maxWidth: '560px',
+        maxWidth: '620px',
         padding: '24px',
         display: 'flex',
         flexDirection: 'column',
         gap: '16px',
-        boxShadow: '0 20px 60px rgba(0, 0, 0, 0.8)'
+        boxShadow: '0 20px 60px rgba(0, 0, 0, 0.85)',
+        maxHeight: '90vh',
+        overflowY: 'auto'
       }}>
         {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <UploadCloud size={20} color="var(--accent-cyan)" />
             <span style={{ fontSize: '16px', fontWeight: 700 }}>
-              Load Custom Spatial Dataset
+              Load Spatial Dataset for Visualization
             </span>
           </div>
           <button 
@@ -101,6 +122,67 @@ export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
           >
             <X size={18} />
           </button>
+        </div>
+
+        {/* Demo Presets Section */}
+        <div style={{
+          background: 'rgba(0, 240, 255, 0.05)',
+          border: '1px solid rgba(0, 240, 255, 0.2)',
+          borderRadius: '10px',
+          padding: '12px 14px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '8px'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <Sparkles size={14} color="var(--accent-cyan)" />
+            <span style={{ fontSize: '12px', fontWeight: 600, color: '#e0f2fe' }}>
+              Quick Load Demo Presets (1-Click)
+            </span>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px' }}>
+            {DEMO_PRESETS.map((preset) => (
+              <button
+                key={preset.id}
+                type="button"
+                onClick={() => handleSelectDemoPreset(preset)}
+                disabled={loadingDemoId === preset.id}
+                style={{
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: '8px',
+                  padding: '8px 10px',
+                  color: 'var(--text-main)',
+                  fontSize: '11px',
+                  textAlign: 'left',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '6px',
+                  transition: 'all 0.15s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--accent-cyan)';
+                  e.currentTarget.style.background = 'rgba(0, 240, 255, 0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'var(--border-subtle)';
+                  e.currentTarget.style.background = 'rgba(15, 23, 42, 0.7)';
+                }}
+              >
+                <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                  <div style={{ fontWeight: 600 }}>{preset.name}</div>
+                  <div style={{ fontSize: '10px', color: 'var(--text-muted)' }}>
+                    {preset.total_frames} frames • {preset.id}
+                  </div>
+                </div>
+                <span style={{ color: 'var(--accent-cyan)', fontSize: '10px', fontWeight: 600 }}>
+                  {loadingDemoId === preset.id ? '...' : 'Load'}
+                </span>
+              </button>
+            ))}
+          </div>
         </div>
 
         {error && (
@@ -128,16 +210,16 @@ export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
               </label>
               <input 
                 type="text"
-                placeholder="e.g. Route Testing Delta"
+                placeholder="e.g. Corridor Run Beta"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 style={{
                   width: '100%',
-                  background: 'rgba(15, 23, 42, 0.7)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '6px',
-                  padding: '8px 10px',
-                  color: '#fff',
+                  background: 'var(--bg-input)',
+                  border: '1px solid var(--border-medium)',
+                  borderRadius: '8px',
+                  padding: '9px 12px',
+                  color: 'var(--text-main)',
                   fontSize: '13px',
                   outline: 'none'
                 }}
@@ -150,16 +232,16 @@ export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
               </label>
               <input 
                 type="text"
-                placeholder="Brief mission description"
+                placeholder="Brief mission details"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 style={{
                   width: '100%',
-                  background: 'rgba(15, 23, 42, 0.7)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: '6px',
-                  padding: '8px 10px',
-                  color: '#fff',
+                  background: 'var(--bg-input)',
+                  border: '1px solid var(--border-medium)',
+                  borderRadius: '8px',
+                  padding: '9px 12px',
+                  color: 'var(--text-main)',
                   fontSize: '13px',
                   outline: 'none'
                 }}
@@ -181,7 +263,7 @@ export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
                 gap: '4px'
               }}>
                 <FileText size={12} />
-                <span>Upload .json file</span>
+                <span>Upload .json file from demo_data/</span>
                 <input 
                   type="file" 
                   accept=".json" 
@@ -191,17 +273,17 @@ export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
               </label>
             </div>
             <textarea
-              rows={8}
+              rows={7}
               placeholder='[&#10;  { "time": 0, "blue": [{ "lat": 28.61, "lng": 77.21 }], "yellow": [] },&#10;  { "time": 1, "blue": [{ "lat": 28.612, "lng": 77.212 }], "yellow": [] }&#10;]'
               value={jsonText}
               onChange={(e) => setJsonText(e.target.value)}
               style={{
                 width: '100%',
-                background: 'rgba(5, 8, 16, 0.8)',
-                border: '1px solid var(--border-subtle)',
+                background: 'var(--bg-input)',
+                border: '1px solid var(--border-medium)',
                 borderRadius: '8px',
                 padding: '10px',
-                color: '#38bdf8',
+                color: 'var(--text-main)',
                 fontFamily: 'var(--font-mono)',
                 fontSize: '11px',
                 outline: 'none',
@@ -222,9 +304,9 @@ export default function UploadModal({ isOpen, onClose, onUploadSuccess }) {
               type="submit" 
               disabled={submitting || !jsonText.trim()}
               className="btn-glass active"
-              style={{ minWidth: '120px' }}
+              style={{ minWidth: '130px' }}
             >
-              {submitting ? 'Processing...' : 'Load Scenario'}
+              {submitting ? 'Visualizing...' : 'Load & Visualize'}
             </button>
           </div>
         </form>
