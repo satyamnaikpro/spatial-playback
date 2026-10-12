@@ -2,17 +2,35 @@ import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 
 const TILE_PROVIDERS = {
-  dark: {
-    url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-    attribution: '&copy; <a href="https://carto.com/">CARTO</a> &copy; OpenStreetMap'
-  },
-  satellite: {
-    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-  },
+  // Google Maps Style Street Map (Clean roads, transit, landmarks, zero watermark)
   street: {
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+    attribution: 'Tiles &copy; Esri &mdash; Sources: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, METI, TomTom'
+  },
+  // OpenStreetMap standard
+  osm: {
     url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     attribution: '&copy; OpenStreetMap contributors'
+  },
+  // Google Maps Satellite Imagery (Photorealistic, zero watermark)
+  satellite: {
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP'
+  },
+  // Google Maps Terrain / Topography (Contours, hillshading)
+  terrain: {
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
+    attribution: 'Tiles &copy; Esri &mdash; Sources: Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN'
+  },
+  // Clean Light Gray Canvas (No watermark)
+  light: {
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
+  },
+  // Google Maps Dark Gray Canvas (Clean night mode, no watermark)
+  dark: {
+    url: 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
   }
 };
 
@@ -23,8 +41,14 @@ export default function MapViewer({
   resolvedPoints = [],
   historicalTrails = {},
   showTrails = true,
-  mapStyle = 'dark',
-  currentStepIndex = 0
+  showAlerts = true,
+  showResolved = true,
+  showLabels = true,
+  showRangeRings = true,
+  mapStyle = 'street',
+  currentStepIndex = 0,
+  cameraAction = null,
+  sidebarOpen = true
 }) {
   const mapContainerRef = useRef(null);
   const mapInstanceRef = useRef(null);
@@ -33,8 +57,9 @@ export default function MapViewer({
   const entityLayerGroupRef = useRef(null);
   const alertLayerGroupRef = useRef(null);
   const resolvedLayerGroupRef = useRef(null);
+  const rangeRingGroupRef = useRef(null);
 
-  // 1. Initialize Map once
+  // 1. Initialize Leaflet Map once
   useEffect(() => {
     if (!mapContainerRef.current || mapInstanceRef.current) return;
 
@@ -47,9 +72,10 @@ export default function MapViewer({
       zoomControl: false
     });
 
+    // Google-style zoom controls in bottom-right corner
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    const tileCfg = TILE_PROVIDERS[mapStyle] || TILE_PROVIDERS.dark;
+    const tileCfg = TILE_PROVIDERS[mapStyle] || TILE_PROVIDERS.street;
     const tileLayer = L.tileLayer(tileCfg.url, {
       attribution: tileCfg.attribution,
       maxZoom: 19
@@ -57,6 +83,7 @@ export default function MapViewer({
 
     tileLayerRef.current = tileLayer;
     trailLayerGroupRef.current = L.layerGroup().addTo(map);
+    rangeRingGroupRef.current = L.layerGroup().addTo(map);
     resolvedLayerGroupRef.current = L.layerGroup().addTo(map);
     alertLayerGroupRef.current = L.layerGroup().addTo(map);
     entityLayerGroupRef.current = L.layerGroup().addTo(map);
@@ -68,11 +95,20 @@ export default function MapViewer({
     };
   }, []);
 
-  // 2. Switch Tile Layer dynamically
+  // 2. Handle sidebar open/close resize
+  useEffect(() => {
+    if (!mapInstanceRef.current) return;
+    const timer = setTimeout(() => {
+      mapInstanceRef.current.invalidateSize();
+    }, 280);
+    return () => clearTimeout(timer);
+  }, [sidebarOpen]);
+
+  // 3. Switch Tile Layer dynamically (Watermark-Free)
   useEffect(() => {
     if (!mapInstanceRef.current || !tileLayerRef.current) return;
     const map = mapInstanceRef.current;
-    const tileCfg = TILE_PROVIDERS[mapStyle] || TILE_PROVIDERS.dark;
+    const tileCfg = TILE_PROVIDERS[mapStyle] || TILE_PROVIDERS.street;
 
     map.removeLayer(tileLayerRef.current);
     const newTileLayer = L.tileLayer(tileCfg.url, {
@@ -84,7 +120,7 @@ export default function MapViewer({
     tileLayerRef.current = newTileLayer;
   }, [mapStyle]);
 
-  // 3. Fit bounds when scenario metadata changes
+  // 4. Fit bounds when scenario metadata changes
   useEffect(() => {
     if (!mapInstanceRef.current || !metadata) return;
     const map = mapInstanceRef.current;
@@ -92,7 +128,7 @@ export default function MapViewer({
     if (metadata.bounds && metadata.bounds.length === 2) {
       try {
         map.fitBounds(metadata.bounds, { padding: [60, 60], maxZoom: 15 });
-      } catch (err) {
+      } catch {
         if (metadata.center) map.setView(metadata.center, metadata.default_zoom || 13);
       }
     } else if (metadata.center) {
@@ -100,7 +136,34 @@ export default function MapViewer({
     }
   }, [metadata?.id]);
 
-  // 4. Render Historical Breadcrumb Trails
+  // 5. Camera command dispatch (fit_bounds, follow asset, zoom, fly_to)
+  useEffect(() => {
+    if (!mapInstanceRef.current || !cameraAction) return;
+    const map = mapInstanceRef.current;
+
+    if (cameraAction.type === 'fit_bounds') {
+      if (metadata?.bounds && metadata.bounds.length === 2) {
+        map.fitBounds(metadata.bounds, { padding: [60, 60], maxZoom: 15, animate: true, duration: 0.8 });
+      } else if (metadata?.center) {
+        map.flyTo(metadata.center, metadata.default_zoom || 13, { duration: 0.8 });
+      }
+    } else if (cameraAction.type === 'center_entity') {
+      if (activeEntities.length > 0) {
+        const primary = activeEntities[0];
+        map.flyTo([primary.lat, primary.lng], 15, { duration: 0.8 });
+      }
+    } else if (cameraAction.type === 'fly_to') {
+      if (cameraAction.payload && cameraAction.payload.lat != null) {
+        map.flyTo([cameraAction.payload.lat, cameraAction.payload.lng], cameraAction.payload.zoom || 15, { duration: 0.8 });
+      }
+    } else if (cameraAction.type === 'zoom_in') {
+      map.zoomIn();
+    } else if (cameraAction.type === 'zoom_out') {
+      map.zoomOut();
+    }
+  }, [cameraAction]);
+
+  // 6. Render Historical Breadcrumb Motion Trails
   useEffect(() => {
     if (!trailLayerGroupRef.current) return;
     const layer = trailLayerGroupRef.current;
@@ -112,13 +175,13 @@ export default function MapViewer({
       if (!points || points.length < 2) return;
 
       const entity = activeEntities.find(e => e.id === entityId);
-      const color = entity?.color || '#00f0ff';
+      const color = entity?.color || '#1a73e8';
 
       // Outer glow line
       L.polyline(points, {
         color: color,
         weight: 6,
-        opacity: 0.25,
+        opacity: 0.22,
         lineCap: 'round',
         lineJoin: 'round'
       }).addTo(layer);
@@ -126,8 +189,8 @@ export default function MapViewer({
       // Core crisp path
       L.polyline(points, {
         color: color,
-        weight: 2.5,
-        opacity: 0.85,
+        weight: 3,
+        opacity: 0.9,
         dashArray: '6, 6',
         lineCap: 'round',
         lineJoin: 'round'
@@ -135,31 +198,32 @@ export default function MapViewer({
     });
   }, [historicalTrails, showTrails, activeEntities]);
 
-  // 5. Render Resolved / Cleared Incident Markers (Green "X" markers from GIF)
+  // 7. Render Resolved Incident Checkpoint Markers (Green markers)
   useEffect(() => {
     if (!resolvedLayerGroupRef.current) return;
     const layer = resolvedLayerGroupRef.current;
     layer.clearLayers();
 
+    if (!showResolved) return;
+
     resolvedPoints.forEach(res => {
-      const color = res.color || '#10b981';
+      const color = res.color || '#1e8e3e';
 
       const iconHtml = `
         <div style="position: relative; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;">
           <div style="
             width: 22px; 
             height: 22px; 
-            border-radius: 6px; 
-            background: rgba(16, 185, 129, 0.18); 
-            border: 1.5px solid ${color}; 
-            box-shadow: 0 0 10px rgba(16, 185, 129, 0.35); 
+            border-radius: 50%; 
+            background: #ffffff; 
+            border: 2px solid ${color}; 
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
             display: flex; 
             align-items: center; 
             justify-content: center;
           ">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
           </div>
         </div>
@@ -176,11 +240,11 @@ export default function MapViewer({
 
       marker.bindPopup(`
         <div style="font-size: 12px; font-family: var(--font-sans);">
-          <div style="font-weight: 700; color: #10b981; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+          <div style="font-weight: 700; color: #1e8e3e; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
             <span>✓</span> ${res.title || 'Cleared Incident'}
           </div>
           <div style="color: var(--text-muted); font-size: 11px;">
-            Status: <b style="color: #10b981;">Resolved / Cleared</b>
+            Status: <b style="color: #1e8e3e;">Resolved & Verified</b>
           </div>
           <div style="font-family: var(--font-mono); font-size: 10px; color: var(--text-dim); margin-top: 4px;">
             ${res.lat.toFixed(5)}, ${res.lng.toFixed(5)}
@@ -190,21 +254,36 @@ export default function MapViewer({
 
       marker.addTo(layer);
     });
-  }, [resolvedPoints]);
+  }, [resolvedPoints, showResolved]);
 
-  // 6. Render Active Incidents / Alerts (Orange / Yellow pulsating markers)
+  // 8. Render Dynamic Alerts & Hazard Markers (Google Traffic Incident Style)
   useEffect(() => {
     if (!alertLayerGroupRef.current) return;
     const layer = alertLayerGroupRef.current;
     layer.clearLayers();
 
+    if (!showAlerts) return;
+
     activeAlerts.forEach(alert => {
-      const color = alert.severity === 'danger' ? '#ef4444' : '#f97316';
+      const color = alert.severity === 'danger' ? '#d93025' : '#ea8600';
 
       const iconHtml = `
-        <div style="position: relative; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;">
-          <div class="pulse-ring" style="position: absolute; width: 30px; height: 30px; border-radius: 50%; border: 2px solid ${color}; background: rgba(249, 115, 22, 0.2);"></div>
-          <div style="width: 14px; height: 14px; border-radius: 50%; background: ${color}; border: 2px solid #fff; box-shadow: 0 0 12px ${color}; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: bold; color: #000;">!</div>
+        <div style="position: relative; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;">
+          <div class="pulse-ring" style="position: absolute; width: 28px; height: 28px; border-radius: 50%; border: 2px solid ${color}; background: rgba(234, 134, 0, 0.2);"></div>
+          <div style="
+            width: 22px; 
+            height: 22px; 
+            border-radius: 50%; 
+            background: #ffffff; 
+            border: 2px solid ${color}; 
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 11px; 
+            font-weight: bold; 
+            color: ${color};
+          ">!</div>
         </div>
       `;
 
@@ -212,8 +291,8 @@ export default function MapViewer({
         icon: L.divIcon({
           className: 'custom-alert-icon',
           html: iconHtml,
-          iconSize: [36, 36],
-          iconAnchor: [18, 18]
+          iconSize: [34, 34],
+          iconAnchor: [17, 17]
         })
       });
 
@@ -223,7 +302,7 @@ export default function MapViewer({
             <span>⚠️</span> ${alert.title}
           </div>
           <div style="color: var(--text-main); margin-bottom: 6px;">
-            ${alert.description || 'Active dispatch alert'}
+            ${alert.description || 'Active dispatch event'}
           </div>
           <div style="font-family: var(--font-mono); font-size: 10px; color: var(--text-dim);">
             ${alert.lat.toFixed(5)}, ${alert.lng.toFixed(5)}
@@ -233,51 +312,69 @@ export default function MapViewer({
 
       marker.addTo(layer);
     });
-  }, [activeAlerts]);
+  }, [activeAlerts, showAlerts]);
 
-  // 7. Render Moving Active Entities (Blue Patrol Unit with heading)
+  // 9. Render Moving Patrol Units with Heading Orientation & Range Rings
   useEffect(() => {
-    if (!entityLayerGroupRef.current) return;
-    const layer = entityLayerGroupRef.current;
-    layer.clearLayers();
+    if (!entityLayerGroupRef.current || !rangeRingGroupRef.current) return;
+    const entityLayer = entityLayerGroupRef.current;
+    const ringLayer = rangeRingGroupRef.current;
+    entityLayer.clearLayers();
+    ringLayer.clearLayers();
 
     activeEntities.forEach(entity => {
-      const color = entity.color || '#00f0ff';
+      const color = entity.color || '#1a73e8';
       const heading = entity.heading_deg || 0;
+
+      // Range ring overlay
+      if (showRangeRings) {
+        L.circle([entity.lat, entity.lng], {
+          radius: 350,
+          color: color,
+          weight: 1.5,
+          opacity: 0.4,
+          fillColor: color,
+          fillOpacity: 0.06,
+          dashArray: '5, 5'
+        }).addTo(ringLayer);
+      }
+
+      const labelHtml = showLabels ? `
+        <div style="
+          position: absolute;
+          bottom: -13px;
+          white-space: nowrap;
+          background: #ffffff;
+          border: 1px solid #dadce0;
+          color: #202124;
+          padding: 1px 6px;
+          border-radius: 10px;
+          font-size: 10px;
+          font-weight: 600;
+          box-shadow: 0 1px 4px rgba(60,64,67,0.25);
+        ">${entity.name || entity.id}</div>
+      ` : '';
 
       const iconHtml = `
         <div style="position: relative; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;">
-          <div style="position: absolute; width: 26px; height: 26px; border-radius: 50%; background: ${color}; opacity: 0.25; filter: blur(4px);"></div>
           <div style="
-            width: 28px;
-            height: 28px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
-            background: #090d16;
-            border: 2px solid ${color};
-            box-shadow: 0 0 10px ${color};
+            background: #ffffff;
+            border: 2.5px solid ${color};
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
             display: flex;
             align-items: center;
             justify-content: center;
             transform: rotate(${heading}deg);
             transition: transform 0.1s linear;
           ">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="${color}">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="${color}">
               <polygon points="12 2 22 21 12 17 2 21 12 2"/>
             </svg>
           </div>
-          <div style="
-            position: absolute;
-            bottom: -10px;
-            white-space: nowrap;
-            background: rgba(9, 13, 22, 0.85);
-            border: 1px solid ${color}66;
-            color: #fff;
-            padding: 1px 4px;
-            border-radius: 4px;
-            font-size: 9px;
-            font-weight: 600;
-            font-family: var(--font-mono);
-          ">${entity.name || entity.id}</div>
+          ${labelHtml}
         </div>
       `;
 
@@ -295,51 +392,21 @@ export default function MapViewer({
           <div style="font-weight: 700; color: ${color}; margin-bottom: 6px; font-size: 13px;">
             ${entity.name || entity.id}
           </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-family: var(--font-mono); font-size: 11px;">
-            <div>Speed: <b style="color:#fff;">${entity.speed_kmh} km/h</b></div>
-            <div>Heading: <b style="color:#fff;">${entity.heading_deg}°</b></div>
-            <div>Lat: <b style="color:#fff;">${entity.lat.toFixed(4)}</b></div>
-            <div>Lng: <b style="color:#fff;">${entity.lng.toFixed(4)}</b></div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 11px;">
+            <div>Speed: <b style="color:var(--text-main);">${entity.speed_kmh} km/h</b></div>
+            <div>Heading: <b style="color:var(--text-main);">${entity.heading_deg}°</b></div>
+            <div>Altitude: <b style="color:var(--text-main);">${entity.altitude_m || 0}m</b></div>
+            <div>Lat/Lng: <b style="color:var(--text-main);">${entity.lat.toFixed(4)}, ${entity.lng.toFixed(4)}</b></div>
           </div>
         </div>
       `);
 
-      marker.addTo(layer);
+      marker.addTo(entityLayer);
     });
-  }, [activeEntities]);
+  }, [activeEntities, showLabels, showRangeRings]);
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-      {/* Iconic Floating 'Time step: N' HUD badge (mirroring the GIF style) */}
-      <div 
-        className="glass-panel"
-        style={{
-          position: 'absolute',
-          top: '16px',
-          right: '16px',
-          zIndex: 998,
-          padding: '8px 16px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          border: '1px solid rgba(0, 240, 255, 0.25)',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)'
-        }}
-      >
-        <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 500 }}>
-          Time step:
-        </span>
-        <span style={{
-          fontFamily: 'var(--font-mono)',
-          fontSize: '16px',
-          fontWeight: 700,
-          color: 'var(--accent-cyan)',
-          minWidth: '24px'
-        }}>
-          {currentStepIndex}
-        </span>
-      </div>
-
+    <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
       <div 
         ref={mapContainerRef} 
         style={{ width: '100%', height: '100%', zIndex: 1 }} 

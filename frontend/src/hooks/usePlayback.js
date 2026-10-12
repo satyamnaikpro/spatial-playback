@@ -7,13 +7,134 @@ function lerpAngle(a, b, t) {
   return (a + diff * t + 360) % 360;
 }
 
+export const DEMO_PRESETS = [
+  {
+    id: 'urban-clearance',
+    name: 'Urban Incident Clearance (GIF Simulation)',
+    description: '60-frame simulation from user GIF: Patrol vehicle clearing dynamic incidents into resolved status',
+    file: '/demo_data/01_urban_clearance_mission.json',
+    total_frames: 60,
+    center: [28.617, 77.194]
+  },
+  {
+    id: 'fleet-patrol',
+    name: 'Autonomous Urban Fleet',
+    description: '45-frame multi-agent telemetry tracking 3 automated units with congestion & road hazards',
+    file: '/demo_data/03_autonomous_multi_fleet.json',
+    total_frames: 45,
+    center: [28.6139, 77.209]
+  },
+  {
+    id: 'drone-recon',
+    name: 'Drone Air Reconnaissance',
+    description: '36-frame UAV reconnaissance route with 3D altitude telemetry and geofence monitoring',
+    file: '/demo_data/04_aerial_drone_surveillance.json',
+    total_frames: 36,
+    center: [28.625, 77.215]
+  },
+  {
+    id: 'default',
+    name: 'Classic Arterial Route',
+    description: '10-frame arterial corridor tracking with roadside proximity alerts',
+    file: '/demo_data/02_basic_arterial_route.json',
+    total_frames: 10,
+    center: [28.61, 77.21]
+  }
+];
+
+function computeLocalMetadata(scenarioId, name, description, frames, intervalMs = 800) {
+  if (!frames || frames.length === 0) {
+    return {
+      id: scenarioId,
+      name,
+      description,
+      total_frames: 0,
+      duration_seconds: 0.0,
+      default_step_interval_ms: intervalMs,
+      center: [28.61, 77.21],
+      default_zoom: 13,
+      bounds: [[28.6, 77.2], [28.62, 77.22]],
+      total_entities: 0,
+      total_alerts: 0,
+      total_resolved: 0
+    };
+  }
+
+  const allLats = [];
+  const allLngs = [];
+  const uniqueEntities = new Set();
+  let totalAlerts = 0;
+  let totalResolved = 0;
+
+  frames.forEach(f => {
+    (f.entities || []).forEach(e => {
+      allLats.push(e.lat);
+      allLngs.push(e.lng);
+      uniqueEntities.add(e.id);
+    });
+    (f.alerts || []).forEach(a => {
+      allLats.push(a.lat);
+      allLngs.push(a.lng);
+      totalAlerts++;
+    });
+    (f.resolved || []).forEach(r => {
+      allLats.push(r.lat);
+      allLngs.push(r.lng);
+      totalResolved++;
+    });
+
+    if (!f.entities || f.entities.length === 0) {
+      (f.blue || []).forEach(b => {
+        allLats.push(b.lat);
+        allLngs.push(b.lng);
+        uniqueEntities.add('blue-1');
+      });
+      (f.yellow || []).forEach(y => {
+        allLats.push(y.lat);
+        allLngs.push(y.lng);
+        totalAlerts++;
+      });
+    }
+  });
+
+  const minLat = allLats.length ? Math.min(...allLats) : 28.61;
+  const maxLat = allLats.length ? Math.max(...allLats) : 28.61;
+  const minLng = allLngs.length ? Math.min(...allLngs) : 77.21;
+  const maxLng = allLngs.length ? Math.max(...allLngs) : 77.21;
+  const center = [Number(((minLat + maxLat) / 2).toFixed(6)), Number(((minLng + maxLng) / 2).toFixed(6))];
+  const padLat = Math.max((maxLat - minLat) * 0.15, 0.005);
+  const padLng = Math.max((maxLng - minLng) * 0.15, 0.005);
+
+  return {
+    id: scenarioId,
+    name,
+    description,
+    total_frames: frames.length,
+    duration_seconds: Number(((frames.length * intervalMs) / 1000).toFixed(1)),
+    default_step_interval_ms: intervalMs,
+    center,
+    default_zoom: 13,
+    bounds: [
+      [Number((minLat - padLat).toFixed(6)), Number((minLng - padLng).toFixed(6))],
+      [Number((maxLat + padLat).toFixed(6)), Number((maxLng + padLng).toFixed(6))]
+    ],
+    total_entities: uniqueEntities.size || 1,
+    total_alerts: totalAlerts,
+    total_resolved: totalResolved
+  };
+}
+
 export function usePlayback() {
-  const [scenarios, setScenarios] = useState([]);
+  const [scenarios, setScenarios] = useState(DEMO_PRESETS);
   const [currentScenarioId, setCurrentScenarioId] = useState('urban-clearance');
   const [metadata, setMetadata] = useState(null);
   const [frames, setFrames] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [isLiveBackend, setIsLiveBackend] = useState(false);
+
+  // In-memory cache for loaded/custom scenarios
+  const customStoreRef = useRef({});
 
   // Playback state
   const [currentTime, setCurrentTime] = useState(0);
@@ -21,7 +142,7 @@ export function usePlayback() {
   const [speed, setSpeed] = useState(1.0);
   const [loop, setLoop] = useState(true);
   const [showTrails, setShowTrails] = useState(true);
-  const [mapStyle, setMapStyle] = useState('dark');
+  const [mapStyle, setMapStyle] = useState('street');
 
   const animFrameRef = useRef(null);
   const lastTimestampRef = useRef(null);
@@ -39,24 +160,26 @@ export function usePlayback() {
   framesRef.current = frames;
   metadataRef.current = metadata;
 
-  // 1. Fetch scenario list on mount
-  useEffect(() => {
-    async function loadScenarios() {
-      try {
-        const res = await fetch('/api/scenarios');
-        if (!res.ok) throw new Error('Failed to load scenarios');
-        const list = await res.json();
-        setScenarios(list);
-        if (list.length > 0 && !list.find(s => s.id === currentScenarioId)) {
-          setCurrentScenarioId(list[0].id);
-        }
-      } catch (err) {
-        console.error('Error fetching scenarios:', err);
-        setError('Backend not connected or failed to respond');
+  // 1. Fetch scenario list on mount, fallback gracefully to DEMO_PRESETS if backend is not running
+  const reloadScenarios = useCallback(async () => {
+    try {
+      const res = await fetch('/api/scenarios');
+      if (!res.ok) throw new Error('API returned non-200');
+      const list = await res.json();
+      setIsLiveBackend(true);
+      setScenarios(list);
+      if (list.length > 0 && !list.find(s => s.id === currentScenarioId)) {
+        setCurrentScenarioId(list[0].id);
       }
+    } catch {
+      setIsLiveBackend(false);
+      setScenarios(DEMO_PRESETS);
     }
-    loadScenarios();
-  }, []);
+  }, [currentScenarioId]);
+
+  useEffect(() => {
+    reloadScenarios();
+  }, [reloadScenarios]);
 
   // 2. Load metadata and frames when scenario changes
   useEffect(() => {
@@ -67,29 +190,94 @@ export function usePlayback() {
     setCurrentTime(0);
 
     async function loadScenarioData() {
-      try {
-        const [metaRes, framesRes] = await Promise.all([
-          fetch(`/api/scenarios/${currentScenarioId}/metadata`),
-          fetch(`/api/scenarios/${currentScenarioId}/frames`)
-        ]);
-
-        if (!metaRes.ok || !framesRes.ok) {
-          throw new Error('Failed to fetch scenario data');
+      // Check in-memory custom scenario store first
+      if (customStoreRef.current[currentScenarioId]) {
+        const stored = customStoreRef.current[currentScenarioId];
+        if (!isCancelled) {
+          setMetadata(stored.metadata);
+          setFrames(stored.frames);
+          setCurrentTime(0);
+          setLoading(false);
+          setError(null);
         }
+        return;
+      }
 
-        const metaData = await metaRes.json();
-        const framesData = await framesRes.json();
+      // If backend is active, attempt fetching from API
+      if (isLiveBackend) {
+        try {
+          const [metaRes, framesRes] = await Promise.all([
+            fetch(`/api/scenarios/${currentScenarioId}/metadata`),
+            fetch(`/api/scenarios/${currentScenarioId}/frames`)
+          ]);
+
+          if (metaRes.ok && framesRes.ok) {
+            const metaData = await metaRes.json();
+            const framesData = await framesRes.json();
+
+            if (!isCancelled) {
+              setMetadata(metaData);
+              setFrames(framesData);
+              setCurrentTime(0);
+              setLoading(false);
+              setError(null);
+            }
+            return;
+          }
+        } catch {
+          // Fall through to static demo file loader
+        }
+      }
+
+      // Static Demo File fallback
+      const demoPreset = DEMO_PRESETS.find(p => p.id === currentScenarioId);
+      const filePath = demoPreset ? demoPreset.file : `/demo_data/${currentScenarioId}.json`;
+
+      try {
+        const fileRes = await fetch(filePath);
+        if (!fileRes.ok) throw new Error(`Could not load static file ${filePath}`);
+        const framesData = await fileRes.json();
+
+        // Ensure legacy format frames are normalized with entities
+        const normalizedFrames = framesData.map((rf, idx) => {
+          let entities = rf.entities || [];
+          if (entities.length === 0 && rf.blue && rf.blue.length > 0) {
+            entities = rf.blue.map((b, bIdx) => ({
+              id: `entity-${bIdx + 1}`,
+              name: `Asset ${bIdx + 1}`,
+              lat: b.lat,
+              lng: b.lng,
+              speed_kmh: 30.0,
+              heading_deg: 45.0,
+              altitude_m: 0.0,
+              color: '#00f0ff'
+            }));
+          }
+          return {
+            ...rf,
+            entities,
+            alerts: rf.alerts || [],
+            resolved: rf.resolved || []
+          };
+        });
+
+        const metaData = computeLocalMetadata(
+          currentScenarioId,
+          demoPreset ? demoPreset.name : currentScenarioId,
+          demoPreset ? demoPreset.description : 'Demo Trajectory',
+          normalizedFrames
+        );
 
         if (!isCancelled) {
           setMetadata(metaData);
-          setFrames(framesData);
+          setFrames(normalizedFrames);
           setCurrentTime(0);
           setLoading(false);
           setError(null);
         }
       } catch (err) {
         if (!isCancelled) {
-          console.error(err);
+          console.error('Error loading scenario:', err);
           setError(`Could not load scenario ${currentScenarioId}`);
           setLoading(false);
         }
@@ -98,9 +286,78 @@ export function usePlayback() {
 
     loadScenarioData();
     return () => { isCancelled = true; };
-  }, [currentScenarioId]);
+  }, [currentScenarioId, isLiveBackend]);
 
-  // 3. Animation loop for 60fps continuous playback interpolation
+  // 3. Register custom uploaded scenario (works both online with FastAPI or offline client-side)
+  const registerCustomScenario = useCallback(async (name, description, rawFrames) => {
+    // Try FastAPI if online
+    if (isLiveBackend) {
+      try {
+        const res = await fetch('/api/scenarios/custom', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, description, frames: rawFrames })
+        });
+        if (res.ok) {
+          const newScenario = await res.json();
+          await reloadScenarios();
+          setCurrentScenarioId(newScenario.id);
+          return newScenario.id;
+        }
+      } catch {
+        // Fall back to local registration
+      }
+    }
+
+    // Local client-side registration
+    const newId = `custom-${Date.now().toString(36)}`;
+    const normalizedFrames = rawFrames.map((rf, idx) => {
+      let entities = rf.entities || [];
+      if (entities.length === 0 && rf.blue && rf.blue.length > 0) {
+        entities = rf.blue.map((b, bIdx) => ({
+          id: `custom-ent-${bIdx + 1}`,
+          name: `Custom Entity ${bIdx + 1}`,
+          lat: b.lat,
+          lng: b.lng,
+          speed_kmh: 35.0,
+          heading_deg: 0.0,
+          altitude_m: 0.0,
+          color: '#38bdf8'
+        }));
+      }
+      return {
+        time: rf.time != null ? rf.time : idx,
+        blue: rf.blue || [],
+        yellow: rf.yellow || [],
+        entities,
+        alerts: rf.alerts || [],
+        resolved: rf.resolved || []
+      };
+    });
+
+    const localMeta = computeLocalMetadata(newId, name, description, normalizedFrames);
+
+    customStoreRef.current[newId] = {
+      metadata: localMeta,
+      frames: normalizedFrames
+    };
+
+    setScenarios(prev => [
+      ...prev,
+      {
+        id: newId,
+        name,
+        description,
+        total_frames: normalizedFrames.length,
+        center: localMeta.center
+      }
+    ]);
+
+    setCurrentScenarioId(newId);
+    return newId;
+  }, [isLiveBackend, reloadScenarios]);
+
+  // 4. Animation loop for 60fps continuous playback interpolation
   const stepAnimation = useCallback((timestamp) => {
     if (!isPlayingRef.current) return;
 
@@ -179,15 +436,17 @@ export function usePlayback() {
 
   const stepBackward = () => {
     pause();
+    const totalFrames = frames.length;
+    if (totalFrames === 0) return;
     setCurrentTime(t => Math.max(Math.ceil(t) - 1, 0));
   };
 
-  // 4. Compute interpolated entities, active alerts, resolved points, and trails
+  // 5. Compute interpolated entities, alerts, resolved points, and trails
   const totalFrames = frames.length;
   let activeEntities = [];
   let activeAlerts = [];
   let resolvedPoints = [];
-  let historicalTrails = {};
+  const historicalTrails = {};
 
   if (totalFrames > 0) {
     const floorIdx = Math.floor(currentTime);
@@ -250,7 +509,7 @@ export function usePlayback() {
     // Active incidents / alerts
     activeAlerts = frame0.alerts || [];
 
-    // Resolved points (Green X markers from GIF)
+    // Resolved points
     resolvedPoints = frame0.resolved || [];
   }
 
@@ -275,6 +534,7 @@ export function usePlayback() {
     mapStyle,
     loading,
     error,
+    isLiveBackend,
     activeEntities,
     activeAlerts,
     resolvedPoints,
@@ -292,9 +552,7 @@ export function usePlayback() {
     setLoop,
     setShowTrails,
     setMapStyle,
-    reloadScenarios: async () => {
-      const res = await fetch('/api/scenarios');
-      if (res.ok) setScenarios(await res.json());
-    }
+    reloadScenarios,
+    registerCustomScenario
   };
 }
